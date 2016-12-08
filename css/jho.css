@@ -1,0 +1,92 @@
+
+h1 {
+	font-family: 'Varela Round', cursive;
+	color: #333;
+	}
+
+p {
+	font-family: 'Pontano Sans', sans-serif;
+	color: #676767;
+	font-size: 14px;
+	letter-spacing: .3px;
+}
+
+/*img {
+	height: 100vh;
+	width: 100vw;
+}*/
+html {
+	background: url(../images/ohjulieho.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	overflow: hidden;
+}
+
+#top-content {
+	height: 260px;
+	color: white;
+	margin-bottom: calc(100vh - 200px);
+}
+
+.uk-grid {
+	background-color: white;
+}
+
+#spacer {
+	height: 10000px;
+}
+
+.intro {
+	background: rgba(255,255,255,0.6);
+	text-align: center;
+	margin: 50px;
+	height: 200px;
+	padding-top: 100px;
+	border-radius: 3px;
+}
+
+.intro .uk-button {
+	margin-top: 20px;
+}
+
+.uk-button-primary:hover, .uk-button-primary:focus {
+    background-color: #7ecfbc;
+    color: #ffffff;
+}
+
+.project-card {
+	background: brown;
+	border: 1px solid blue;
+	border-radius: 3px;
+	padding: 15px;
+	margin: 15px;
+	position: absolute; 
+	box-sizing: border-box; 
+	top: 0px; 
+	opacity: 1; 
+	left: 0px; 
+	display: block;
+	color: white;
+}
+
+.uk-progress-bar-1 { 
+	background-image: none;
+	background: red;
+}
+
+.uk-progress-bar-2 { 
+	background-image: none;
+	background: green;
+}
+
+.uk-progress-bar-3 { 
+	background-image: none;
+	background: blue;
+}
+
+.uk-progress-bar-4 { 
+	background-image: none;
+	background: black;
+}
