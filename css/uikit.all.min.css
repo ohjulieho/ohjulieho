@@ -15,17 +15,7 @@ a:active,
 a:hover {
   outline: 0;
 }
-a,
-.uk-link {
-  color: #74cab5;
-  text-decoration: none;
-  cursor: pointer;
-}
-a:hover,
-.uk-link:hover {
-  color: #61b7a2;
-  text-decoration: underline;
-}
+
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -153,59 +143,7 @@ h6 {
 * + h6 {
   margin-top: 25px;
 }
-h1,
-.uk-h1 {
-  font-size: 36px;
-  line-height: 42px;
-}
-h2,
-.uk-h2 {
-  font-size: 24px;
-  line-height: 30px;
-}
-h3,
-.uk-h3 {
-  font-size: 18px;
-  line-height: 24px;
-}
-h4,
-.uk-h4 {
-  font-size: 16px;
-  line-height: 22px;
-}
-h5,
-.uk-h5 {
-  font-size: 14px;
-  line-height: 20px;
-}
-h6,
-.uk-h6 {
-  font-size: 12px;
-  line-height: 18px;
-}
-ul,
-ol {
-  padding-left: 30px;
-}
-ul > li > ul,
-ul > li > ol,
-ol > li > ol,
-ol > li > ul {
-  margin: 0;
-}
-dt {
-  font-weight: bold;
-}
-dd {
-  margin-left: 0;
-}
-hr {
-  box-sizing: content-box;
-  height: 0;
-  margin: 15px 0;
-  border: 0;
-  border-top: 1px solid #dddddd;
-}
+
 address {
   font-style: normal;
 }
