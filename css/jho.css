@@ -85,6 +85,10 @@ i {
 	margin-left: 6px;
 }
 
+span.strong {
+	font-weight: bold;
+}
+
 /* ----------- buttons & links ----------- */
 /* --------------------------------------- */
 
