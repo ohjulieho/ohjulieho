@@ -212,6 +212,7 @@ a:hover {
     position: absolute;
     -webkit-animation: move 3s;
     animation: move 3.5s;
+    cursor: default;
 }
 
 #rotator img {
