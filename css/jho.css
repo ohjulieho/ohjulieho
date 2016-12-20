@@ -25,22 +25,26 @@ html { /*
 .intro {
 	background: rgba(255,255,255,0.6);
 	text-align: left;
-	margin: 100px 0 0 50px;
+/*	margin: 100px 0 0 50px; */
 	height: 200px;
 	vertical-align: 50%;
 	border-radius: 3px;
 	max-width: 650px;
 }
 
-.social-section {
+/*.social-section {
 	margin: 35px 35px 0 0;
-}
+}*/
 
 .social-section ul li {
 	list-style: none;
 	display: block;
 	text-align: right;
 	margin-left: 10px;
+}
+
+body {
+	margin: 50px;
 }
 
 /* -------------- typography ------------- */
@@ -190,24 +194,24 @@ a:hover {
         top: 300px;
     }
     to {
-    	top: 195px;
+    	top: 125px;
         left: 570px;
     }
 }
 @keyframes move
 {
     from {
-    	top: -8000px;
+    	top: -4000px;
     }
     to {
-		top: 195px;
+		top: 125px;
         left: 570px;
     }
 }
 
 #rotator {
     text-decoration: none;
-    top: 195px;
+    top: 125px;
     left: 570px;
     position: absolute;
     -webkit-animation: move 3s;
