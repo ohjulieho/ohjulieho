@@ -2,46 +2,495 @@
 <html>
     <head>
         <title>Julie Ho | UI & UX Designer</title>
-        <link rel="stylesheet" href="css/uikit.all.min.css" />
-		<link rel="stylesheet" href="css/uikit.almost-flat.min.css" />
-		<link href="https://fonts.googleapis.com/css?family=PT+Sans|Pontano+Sans|Playfair+Display" rel="stylesheet">
-		<link rel="icon" type="image/png" href="images/favicon.png">
+        <link rel="stylesheet" href="css/uikit-core.css" />
         <link rel="stylesheet" href="css/jho.css" />
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans|Pontano+Sans|Playfair+Display|asap" rel="stylesheet">
+		<link rel="icon" type="image/png" href="images/favicon.png">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-        <script src="js/uikit.all.min.js"></script>
+        <script src="js/uikit-new.min.js"></script>
+        <script src="js/jquery.fullPage.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+      <script type="text/javascript" src="js/scrolloverflow.js"></script>
+
+      <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+      <script type="text/javascript">
+        // $(document).ready(function() {
+        //   $('#fullpage').fullpage({
+        //     sectionsColor: ['white', 'white', '#5FBFC2'], 
+        //     scrollingSpeed: 600,
+        //     scrollBar: true,
+        //     autoScrolling: true,
+        //     normalScrollElements: '#recent-work',
+        //   });
+        // });
+      </script>
     </head>
     <body>
-    	<a id="rotator"><img src="images/jhMonster.png" /></a>
-    	<div class="social-section">
-    		<ul>
-    			<li><a href="http://www.instagram.com/ohjulieho" class="social-link" target="_blank">instagram.com/ohjulieho</a><i class="fa fa-instagram"></i></li>
-    			<li><a href="http://www.linkedin.com/in/ohjulieho" class="social-link" target="_blank">linkedin.com/in/ohjulieho</a><i class="fa fa-linkedin"></i></li>
-    			<li><a href="http://www.twitter.com/ohjulieho" class="social-link" target="_blank">twitter.com/ohjulieho</a><i class="fa fa-twitter"></i></li>
-    		</ul>
-    	</div>
-	    <div id="top-content">
-	    	<div class="intro"> 
-	    		<h1>More than just a pretty interface.</h1>
-	    		<h3>Hello! My name is <span class="strong">Julie Ho</span> and I’m a UI & UX Designer with web development chops. If you’re looking to work with a versatile and fun-loving designer, let’s get in touch! </h3>
-	    		<a class="jh-button jh-button-primary" type="button" href="https://www.behance.net/ohjulieho" target="_blank">Go to Behance Portfolio</a>
-	    		<a class="jh-button jh-button-secondary" type="button" href="images/Julie Ho_Resume.pdf" target="_blank">View my Resume</a>
-	    		<p class="subtext">Website & portfolio under construction. (December 15, 2016)</p>
-	    	</div>
-		</div>
+    <div id="fullpage">
+        <div class="section active" id="test">
+            <div class="intro">
+            <!-- (animation) - monster -->
+                <a id="rotator" href="#modal-about" uk-toggle><img src="images/jhMonster.png" /></a>
+                <div class="social-section">
+                    <ul>
+                        <li><a href="http://www.instagram.com/ohjulieho" class="social-link" target="_blank">instagram.com/ohjulieho</a><i class="fa fa-instagram"></i></li>
+                        <li><a href="http://www.linkedin.com/in/ohjulieho" class="social-link" target="_blank">linkedin.com/in/ohjulieho</a><i class="fa fa-linkedin"></i></li>
+                        <li><a href="http://www.twitter.com/ohjulieho" class="social-link" target="_blank">twitter.com/ohjulieho</a><i class="fa fa-twitter"></i></li>
+                    </ul>
+                </div>
+                <!-- (section) - intro -->
+                <div class="top-content">
+                    <div> 
+                        <h1>More than just a pretty interface.</h1>
+                        <h3>Hello! My name is <span class="strong">Julie Ho</span> and I’m a UI & UX Designer with web development chops. If you’re looking to work with a versatile and fun-loving designer, let’s get in touch! </h3>
+                        <a class="jh-button jh-button-primary" type="button" href="#recent-work">See Recent Work</a>
+                        <a class="jh-button jh-button-secondary" type="button" href="images/Julie Ho_Resume.pdf" target="_blank">View my Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- recent work-->
+        <!--            -->
+        <div class="section recent-work" id="recent-work">
+        <h3 class="section-title">Recent Work</h3>
+                <!-- project one -->
+                <!--             -->
+                <div class="project-card" id="project-one">
+                    <div class="project-img" href="#modal-one" uk-toggle>
+                        <img src="images/preview_style_guide.png">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-title">
+                            <h4>ClickTime Style Guide</h4>
+                        </div>
+                        <div id="project-blurb">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                        </div>
+                        <div>
+                            <p class="project-tag">user interface, web dev, style guide, Sketch library</p>
+                        </div>
+                    </div>
+                    <a class="project-card-link" href="#modal-one" uk-toggle>Read more about this project</a>
+                </div>
+                <!-- project two -->
+                <!--             -->
+                <div class="project-card" id="project-two">
+                    <div class="project-img" href="#modal-two" uk-toggle>
+                        <img src="images/preview_personas_workshop.png">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-title">
+                            <h4>Personas Workshop</h4>
+                        </div>
+                        <div id="project-blurb">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                        </div>
+                        <div>
+                            <p class="project-tag">user research, workshop, presentation, personas</p>
+                        </div>
+                    </div>
+                    <a class="project-card-link" href="#modal-two" uk-toggle>Read more about this project</a>
+                </div>
+                <!-- project three -->
+                <!--               -->
+                <div class="project-card" id="project-three">
+                    <div class="project-img" href="#modal-three" uk-toggle>
+                        <img src="images/preview_time_entry.png">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-title">
+                            <h4>Time Entry UI Refresh</h4>
+                        </div>
+                        <div id="project-blurb">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                        </div>
+                        <div>
+                            <p class="project-tag">user interface, web dev, pair programming</p>
+                        </div>
+                    </div>
+                    <a class="project-card-link" href="#modal-three" uk-toggle>Read more about this project</a>
+                </div>
+                <!-- project four -->
+                <!--             -->
+                <div class="project-card" id="project-four">
+                    <div class="project-img" href="#modal-four" uk-toggle>
+                        <img src="images/preview_more_ct.png">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-title">
+                            <h4>ClickTime Pro Services</h4>
+                        </div>
+                        <div id="project-blurb">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                        </div>
+                        <div>
+                            <p class="project-tag">responsive design, branding, mobile</p>
+                        </div>
+                    </div>
+                    <a class="project-card-link" href="#modal-four" uk-toggle>Read more about this project</a>
+                </div>
+                    <div class="clear">
+                    </div>
+                <!-- project five -->
+                <!--              -->
+                <div class="project-card" id="project-five">
+                    <div class="project-img" href="#modal-five" uk-toggle>
+                        <img src="images/preview_more_ct.png">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-title">
+                            <h4>Name of project #5</h4>
+                        </div>
+                        <div id="project-blurb">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                        </div>
+                        <div>
+                            <p class="project-tag">UI/UX, graphic design, web dev</p>
+                        </div>
+                    </div>
+                    <a class="project-card-link" href="#modal-five" uk-toggle>Read more about this project</a>
+                </div>
+                <!-- project six -->
+                <!--             -->
+                <div class="project-card" id="project-six">
+                    <div class="project-img" href="#modal-six" uk-toggle>
+                        <img src="images/preview_bootleggers.png">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-title">
+                            <h4>Bootlegger's Far Out IPA</h4>
+                        </div>
+                        <div id="project-blurb">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                        </div>
+                        <div>
+                            <p class="project-tag">graphic design, packaging, beer!</p>
+                        </div>
+                    </div>
+                    <a class="project-card-link" href="#modal-six" uk-toggle>Read more about this project</a>
+                </div>
+                <!-- project seven -->
+                <!--               -->
+                <div class="project-card" id="project-seven">
+                    <div class="project-img" href="#modal-seven" uk-toggle>
+                        <img src="images/preview_hack_congress.png">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-title">
+                            <h4>Hack Congress Website</h4>
+                        </div>
+                        <div id="project-blurb">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                        </div>
+                        <div>
+                            <p class="project-tag">landing page, visual design, branding, logo design</p>
+                        </div>
+                    </div>
+                    <a class="project-card-link" href="#modal-seven" uk-toggle>Read more about this project</a>
+                </div>
+                <!-- project behance -->
+                <!--                 -->
+                <div class="project-behance">
+                    <a href="http://www.behance.net/ohjulieho" target="_blank">
+                        <div class="project-behance-inset">
+                            <img src="images/favicon.png" />
+                            <p>See more projects on Behance</p>
+                        </div>
+                    </a>
+                        <p class="hidden-msg"> *~  p e e k a b o o !  ~*</p>
+                </div>
+        </div>
+        <!-- (section) - values -->
+        <div class="section values"><h3 class="section-title">My Values</h3>
+            <div class="value-card">
+                <div class="project-content">
+                    <div class="project-title">
+                        <h4 class="h4-value">Respect Others</h4>
+                    </div>
+                    <div>
+                        <p class="p-value">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="value-card">
+                <div class="project-content">
+                    <div class="project-title">
+                        <h4 class="h4-value">Never Stop Learning</h4>
+                    </div>
+                    <div>
+                        <p class="p-value">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="value-card">
+                <div class="project-content">
+                    <div class="project-title">
+                        <h4 class="h4-value">Move Swiftly</h4>
+                    </div>
+                    <div>
+                        <p class="p-value">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="clear">
+            </div>
+            <div class="value-card">
+                <div class="project-content">
+                    <div class="project-title">
+                        <h4 class="h4-value">Consider Everything</h4>
+                    </div>
+                    <div>
+                        <p class="p-value">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="value-card">
+                <div class="project-content">
+                    <div class="project-title">
+                        <h4 class="h4-value">Travel Often</h4>
+                    </div>
+                    <div>
+                        <p class="p-value">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="value-card">
+                <div class="project-content">
+                    <div class="project-title">
+                        <h4 class="h4-value">Do The Best You Can</h4>
+                    </div>
+                    <div>
+                        <p class="p-value">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- (section) - closing -->
+            <div class="closing"><h3 class="section-title"></h3>
+                <div class="modal-social-links">
+                    <a href="mailto:dearjulieho@gmail.com?subject=Dear Julie Ho!"class="social-link" target="_blank"><i class="fa fa-envelope-o"></i></a>
+                    <a href="http://www.instagram.com/ohjulieho" class="social-link" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="http://www.linkedin.com/in/ohjulieho" class="social-link" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <a href="http://www.twitter.com/ohjulieho" class="social-link" target="_blank"><i class="fa fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- section of modals!!!! -->
+
+<!-- (modal) about me -->
+    <div id="modal-about" class="uk-modal-full" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-full" type="button" uk-close></button>
+            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle uk-grid" uk-grid>
+                <div class="uk-background-cover uk-first-column" style="background-image: url('images/ohjulieho2.jpg');" uk-height-viewport>
+                </div>
+                <div class="uk-padding-large">
+                    <h2>About me</h2>
+                    <h4>The name is Julie Ho! This is the part where I speak shameless about myself and I promise to keep it to a minimal! After graduating from CSU Long Beach with an Industrial Design degree, I embarked on post-grad travels while taking on freelance design projects. I spent 2 years working as a UI & UX Designer in San Francisco for enterprise software.</h4>
+                    <h4>While there, I learned that I enjoy distilling and organizing content into elegant pieces for others to enjoy and use. For example, one of my favorite projects was designing and developing the company's first style guide.</h4>
+                    <h4>When I'm not nose-deep in pixels, you can find me enjoying the company of my friends and family or collecting stamps on my passport for my next adventure. I'm currently in my next phase of my career, so if you or someone you know is looking for a versatile designer to work with, <a href="mailto:dearjulieho@gmail.com?subject=Dear Julie Ho!"> let's get in touch!</a></h4>
+                    <div class="modal-social-links">
+                        <a href="http://www.instagram.com/ohjulieho" class="social-link" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="http://www.linkedin.com/in/ohjulieho" class="social-link" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="http://www.twitter.com/ohjulieho" class="social-link" target="_blank"><i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- (modal) project 1 -->
+    <div id="modal-one" class="uk-modal-full" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-full" type="button" uk-close></button>
+            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle uk-grid" uk-grid>
+                <div class="uk-background-cover uk-first-column" style="background-image: url('images/ohjulieho2.jpg');" uk-height-viewport>
+                </div>
+                <div class="uk-padding-large">
+                    <h2>ClickTime Style Guide</h2>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+                    <div class="modal-social-links">
+                        <a href="http://www.instagram.com/ohjulieho" class="social-link" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="http://www.linkedin.com/in/ohjulieho" class="social-link" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="http://www.twitter.com/ohjulieho" class="social-link" target="_blank"><i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- (modal) project 2 -->
+    <div id="modal-two" class="uk-modal-full" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-full" type="button" uk-close></button>
+            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle uk-grid" uk-grid>
+                <div class="uk-background-cover uk-first-column" style="background-image: url('images/ohjulieho2.jpg');" uk-height-viewport>
+                </div>
+                <div class="uk-padding-large">
+                    <h2>Personas Workshop</h2>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+                    <div class="modal-social-links">
+                        <a href="http://www.instagram.com/ohjulieho" class="social-link" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="http://www.linkedin.com/in/ohjulieho" class="social-link" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="http://www.twitter.com/ohjulieho" class="social-link" target="_blank"><i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- (modal) project 3 -->
+    <div id="modal-three" class="uk-modal-full" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-full" type="button" uk-close></button>
+            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle uk-grid" uk-grid>
+                <div class="uk-background-cover uk-first-column" style="background-image: url('images/ohjulieho2.jpg');" uk-height-viewport>
+                </div>
+                <div class="uk-padding-large">
+                    <h2>Time Entry UI Refresh</h2>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+                    <div class="modal-social-links">
+                        <a href="http://www.instagram.com/ohjulieho" class="social-link" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="http://www.linkedin.com/in/ohjulieho" class="social-link" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="http://www.twitter.com/ohjulieho" class="social-link" target="_blank"><i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- (modal) project 4 -->
+    <div id="modal-four" class="uk-modal-full" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-full" type="button" uk-close></button>
+            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle uk-grid" uk-grid>
+                <div class="uk-background-cover uk-first-column" style="background-image: url('images/ohjulieho2.jpg');" uk-height-viewport>
+                </div>
+                <div class="uk-padding-large">
+                    <h2>ClickTime Pro Services</h2>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+                    <div class="modal-social-links">
+                        <a href="http://www.instagram.com/ohjulieho" class="social-link" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="http://www.linkedin.com/in/ohjulieho" class="social-link" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="http://www.twitter.com/ohjulieho" class="social-link" target="_blank"><i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- (modal) project 5 -->
+    <div id="modal-five" class="uk-modal-full" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-full" type="button" uk-close></button>
+            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle uk-grid" uk-grid>
+                <div class="uk-background-cover uk-first-column" style="background-image: url('images/ohjulieho2.jpg');" uk-height-viewport>
+                </div>
+                <div class="uk-padding-large">
+                    <h2>Project #5 name</h2>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+                    <div class="modal-social-links">
+                        <a href="http://www.instagram.com/ohjulieho" class="social-link" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="http://www.linkedin.com/in/ohjulieho" class="social-link" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="http://www.twitter.com/ohjulieho" class="social-link" target="_blank"><i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- (modal) project 6 -->
+    <div id="modal-six" class="uk-modal-full" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-full" type="button" uk-close></button>
+            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle uk-grid" uk-grid>
+                <div class="uk-background-cover uk-first-column" style="background-image: url('images/ohjulieho2.jpg');" uk-height-viewport>
+                </div>
+                <div class="uk-padding-large">
+                    <h2>Bootlegger's Far Out IPA</h2>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+                    <div class="modal-social-links">
+                        <a href="http://www.instagram.com/ohjulieho" class="social-link" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="http://www.linkedin.com/in/ohjulieho" class="social-link" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="http://www.twitter.com/ohjulieho" class="social-link" target="_blank"><i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- (modal) project 7 -->
+    <div id="modal-seven" class="uk-modal-full" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-full" type="button" uk-close></button>
+            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle uk-grid" uk-grid>
+                <div class="uk-background-cover uk-first-column" style="background-image: url('images/ohjulieho2.jpg');" uk-height-viewport>
+                </div>
+                <div class="uk-padding-large">
+                    <h2>Hack Congress</h2>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+                    <div class="modal-social-links">
+                        <a href="http://www.instagram.com/ohjulieho" class="social-link" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="http://www.linkedin.com/in/ohjulieho" class="social-link" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="http://www.twitter.com/ohjulieho" class="social-link" target="_blank"><i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-<!-- Google Analytics -->
-<script>
 
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <button href="#modal-test" uk-toggle>Read more about this test</button>
+    <div id="modal-test" class="uk-modal-full" uk-modal>
+            <div class="uk-modal-dialog">
+                <button class="uk-modal-close-full" type="button" uk-close></button>
+                <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle uk-grid" uk-grid>
+                    <div class="uk-background-cover uk-first-column" style="background-image: url('images/ohjulieho2.jpg');" uk-height-viewport>
+                    </div>
+                    <div class="uk-padding-large uk-overflow-container">
+                    <h2>Modal test</h2>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+                    <div class="modal-social-links">
+                        <a href="http://www.instagram.com/ohjulieho" class="social-link" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="http://www.linkedin.com/in/ohjulieho" class="social-link" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="http://www.twitter.com/ohjulieho" class="social-link" target="_blank"><i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-  ga('create', 'UA-89124301-1', 'auto');
-  ga('send', 'pageview');
 
-</script>
+
+    <script type="text/javascript">
+        var scrollPoint = '#test';
+        var scrollSpeed = 500;
+        var gutter = 30;
+        var scrolling = false;
+
+        document.addEventListener('scroll', e => {
+            if (scrolling) return false;
+
+            var scrollPos = document.body.scrollTop;
+            var offset = $(scrollPoint).offset();
+
+            var top = offset.top;
+            var bottom = offset.top + $(scrollPoint).outerHeight ();
+            var mid = (bottom - top) / 2;
+
+            if (scrollPos > (top + gutter) && scrollPos < (bottom - gutter )) {
+
+                scrolling = true;
+
+                $(document.body).animate({
+                    scrollTop: (scrollPos < mid) ? bottom : top, 
+                }, scrollSpeed, () => {
+                    scrolling = false;
+                });
+            }
+        });
+
+    </script>
+
 </body>
 </html>
