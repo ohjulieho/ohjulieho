@@ -99,7 +99,10 @@ p {
 
 a {
 	font-family: 'asap', sans-serif;
-	font-size: 1em;
+  	color: #82CACC;
+  	font-size: 1em;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 i {
@@ -152,15 +155,11 @@ span.strong {
     text-decoration: none;
 }
 
-a {
+/*a {
   color: #82CACC;
   text-decoration: none;
   cursor: pointer;
-}
-
-a:hover {
-  text-decoration: none;
-}
+}*/
 
 .social-link {
 	color: #A4A4A4;
@@ -253,7 +252,7 @@ svg {
 
 .project-card-link {
 	background: #82CACC;
-	border-top: 2px solid #6EBABC;
+	border-top: 2px solid #6EBABC#6EBABC;
 	padding: 10px 0 10px 0;
 	width: 100%;
 	display: inline-block;
@@ -268,7 +267,6 @@ svg {
 .project-card-link:hover {
 	opacity: .8;
 }
-
 
 .project-card-link:hover .fa-animate {
 	animation: bounceRight 1.25s infinite;
@@ -396,7 +394,26 @@ svg {
 }
 
 
+/* ----------- UI kit overrides ---------- */
+/* --------------------------------------- */
 
+.uk-modal-footer {
+	background: white;
+}
+
+
+.uk-modal-footer a {
+    color: #6EBABC;
+}
+
+.uk-modal-footer a:hover {
+	color: #6EBABC;
+	opacity: .8;
+}
+
+.uk-modal-dialog {
+	height: 100%
+}
 
 /* ------ keyframe animations ------- */
 /* --------------------------------------- */
