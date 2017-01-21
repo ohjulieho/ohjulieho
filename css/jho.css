@@ -93,15 +93,9 @@ p {
 	font-family: 'asap', sans-serif;
 	color: #676767;
 	font-size: 1em;
-	font-size: 14px;
+	font-size: 15px;
 	letter-spacing: .3px;
 }
-
-.values p {
-	color: white;
-	opacity: .8;
-}
-
 
 a {
 	font-family: 'asap', sans-serif;
@@ -238,7 +232,7 @@ svg {
 .project-behance-inset {
 	height: 140px;
 	width: 140px;
-	margin: 150px 0px 0 45px;
+	margin: 132px 0px 0 45px;
 	border-radius: 50%;
 	border: 2px dashed #ccc;
 	background: #ebebeb;
@@ -267,16 +261,25 @@ svg {
 	color: white;
 }
 
+.project-card-link i {
+	color: white;
+}
+
 .project-card-link:hover {
 	opacity: .8;
 }
 
-.project-card-link:after {
+
+.project-card-link:hover .fa-animate {
+	animation: bounceRight 1.25s infinite;
+}
+
+/*.project-card-link:after {
 	margin-left: 8px;
 	content: "\f0da";
 	font-family: "fontawesome";
 }
-
+*/
 .project-content {
 	padding: 13px;
 }
@@ -309,23 +312,34 @@ svg {
 }
 
 .values h4 {
-	margin-bottom: .7em;
+	margin: 1em 0.7em 0;
+	display: inline-block;
 	color: white;
 	text-transform: lowercase;
 	letter-spacing: .1em;
 	font-weight: bold;
 }
 
-.values h4:before {
+.values i {
+	color: #589192;
+	font-size: 1.1em;
+}
+
+/*.values h4:before {
 	margin-right: 8px;
 	color: white;
 	font-size: 1em;
 	content: "\f006";
 	font-family: "fontawesome";
 }
-
+*/
 .values h3 {
 	color: white;
+}
+
+.values p {
+	color: white;
+	opacity: .8;
 }
 
 /* -------------- closing ---------------- */
@@ -346,30 +360,14 @@ svg {
 	margin: 0 10px 0 10px;
 }
 
+.closing img {
+	height: 22px;
+	margin-top: -6;
+}
 
-/* ------ experimental CSS testing ------- */'
+
+/* ------ experimental CSS testing ------- */
 /* --------------------------------------- */
-
-@-webkit-keyframes move
-{
-    from {
-        top: 300px;
-    }
-    to {
-    	top: 125px;
-        left: 570px;
-    }
-}
-@keyframes move
-{
-    from {
-    	top: -4000px;
-    }
-    to {
-		top: 125px;
-        left: 570px;
-    }
-}
 
 #rotator {
     text-decoration: none;
@@ -389,7 +387,7 @@ svg {
     transition-duration: 1s;
     margin-top: 132px;
     height: 60px;
-    }
+ }
 
 #rotator img:hover { 
 	transform: scale(1.18);
@@ -398,3 +396,54 @@ svg {
 }
 
 
+
+
+/* ------ keyframe animations ------- */
+/* --------------------------------------- */
+
+@-webkit-keyframes move
+{
+    from {
+        top: 300px;
+    }
+    to {
+    	top: 125px;
+        left: 570px;
+    }
+}
+
+@keyframes move
+{
+    from {
+    	top: -4000px;
+    }
+    to {
+		top: 125px;
+        left: 570px;
+    }
+}
+
+/*@keyframes bounceRight {
+	0%, 100%, 20%, 50% {
+	    transform: translateX(0);
+	}
+	40% {
+	    transform: translateX(15px);
+	}
+	60% {
+	    transform: translateX(10px);
+	}
+	80% {
+	    transform: translateX(5px);
+	}
+}*/
+
+
+@keyframes bounceRight {
+	0%, 100% {
+	    transform: translateX(0px);
+	}
+	20% {
+	    transform: translateX(7px);
+	}
+}
