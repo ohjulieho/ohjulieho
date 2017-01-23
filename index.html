@@ -12,23 +12,16 @@
         <script src="js/jquery.fullPage.js"></script>
 
         <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-          <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-          <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
-          <script type="text/javascript" src="js/scrolloverflow.js"></script>
+        <!-- image comparison slider -->
 
-          <script type="text/javascript" src="js/jquery.fullPage.js"></script>
-          <script type="text/javascript">
-            // $(document).ready(function() {
-            //   $('#fullpage').fullpage({
-            //     sectionsColor: ['white', 'white', '#5FBFC2'], 
-            //     scrollingSpeed: 600,
-            //     scrollBar: true,
-            //     autoScrolling: true,
-            //     normalScrollElements: '#recent-work',
-            //   });
-            // });
-          </script>
+        <script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+        <script type="text/javascript" src="js/scrolloverflow.js"></script>
+        <script type="text/javascript" src="js/jquery.fullPage.js"></script>
     </head>
     <body>
     <div id="fullpage">
@@ -38,6 +31,7 @@
                 <a id="rotator" href="#modal-about" uk-toggle><img src="images/jhMonster.png" /></a>
                 <div class="social-section">
                     <ul>
+                        <li><a href="#modal-about" uk-toggle class="social-link" target="_blank">about julie ho</a><i class="fa fa-female"></i></li>
                         <li><a href="http://www.instagram.com/ohjulieho" class="social-link" target="_blank">instagram.com/ohjulieho</a><i class="fa fa-instagram"></i></li>
                         <li><a href="http://www.linkedin.com/in/ohjulieho" class="social-link" target="_blank">linkedin.com/in/ohjulieho</a><i class="fa fa-linkedin"></i></li>
                         <li><a href="http://www.twitter.com/ohjulieho" class="social-link" target="_blank">twitter.com/ohjulieho</a><i class="fa fa-twitter"></i></li>
@@ -72,7 +66,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                         </div>
                         <div>
-                            <p class="project-tag">user interface, web dev, style guide, Sketch library</p>
+                            <p class="project-tag">user interface, web dev, style guide, patterns library</p>
                         </div>
                     </div>
                     <a class="project-card-link" href="#modal-one" uk-toggle>Read more about this project<i class="fa fa-caret-right fa-animate"></i></a>
@@ -119,17 +113,17 @@
                 <!--             -->
                 <div class="project-card" id="project-four">
                     <div class="project-img" href="#modal-four" uk-toggle>
-                        <img src="images/preview_more_ct.png">
+                        <img src="images/preview_ar.png">
                     </div>
                     <div class="project-content">
                         <div class="project-title">
-                            <h4>ClickTime Pro Services</h4>
+                            <h4>Augmented Reality Fitness Googles</h4>
                         </div>
                         <div id="project-blurb">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                         </div>
                         <div>
-                            <p class="project-tag">responsive design, branding, mobile</p>
+                            <p class="project-tag">product design, augmented reality, UI/UX</p>
                         </div>
                     </div>
                     <a class="project-card-link" href="#modal-four" uk-toggle>Read more about this project<i class="fa fa-caret-right fa-animate"></i></a>
@@ -144,13 +138,13 @@
                     </div>
                     <div class="project-content">
                         <div class="project-title">
-                            <h4>Name of project #5</h4>
+                            <h4>ClickTime Pro Services</h4>
                         </div>
                         <div id="project-blurb">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                         </div>
                         <div>
-                            <p class="project-tag">UI/UX, graphic design, web dev</p>
+                            <p class="project-tag">responsive design, UI/UX, branding, mobile</p>
                         </div>
                     </div>
                     <a class="project-card-link" href="#modal-five" uk-toggle>Read more about this project<i class="fa fa-caret-right fa-animate"></i></a>
@@ -292,8 +286,8 @@
                 <div class="uk-background-cover uk-first-column" style="background-image: url('images/ohjulieho2.jpg');" uk-height-viewport>
                 </div>
                 <div class="uk-padding-large">
-                    <h2>About me</h2>
-                    <h4>The name is Julie Ho! This is the part where I speak shameless about myself and I promise to keep it to a minimal! After graduating from CSU Long Beach with an Industrial Design degree, I embarked on post-grad travels while taking on freelance design projects. I spent 2 years working as a UI & UX Designer in San Francisco for enterprise software.</h4>
+                    <h2>About Julie Ho</h2>
+                    <h4>Hello! I'm a UI & UX Designer looking for work in the Boston Area. I've spent the last 2 years in the SF Bay Area designing in enterprise software and working probono on the side. </h4>
                     <h4>While there, I learned that I enjoy distilling and organizing content into elegant pieces for others to enjoy and use. For example, one of my favorite projects was designing and developing the company's first style guide.</h4>
                     <h4>When I'm not nose-deep in pixels, you can find me enjoying the company of my friends and family or collecting stamps on my passport for my next adventure. I'm currently in my next phase of my career, so if you or someone you know is looking for a versatile designer to work with, <a href="mailto:dearjulieho@gmail.com?subject=Dear Julie Ho!"> let's get in touch!</a></h4>
                     <div class="modal-social-links">
@@ -332,13 +326,27 @@
             <button class="uk-modal-close-full" type="button" uk-close></button>
             <div class="uk-padding-large uk-padding-remove-bottom uk-padding-remove-top">
                 <h2>Personas Workshop</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 <div>
-                    <img src="https://lh3.google.com/u/0/d/0B3WvdFHji6gUallUQ0hPSkQxbjQ=w2556-h1762-iv1" style="height:400px; float: right; margin: 5px 0 10px 5px;">
+                    <img src="https://lh3.google.com/u/0/d/0B3WvdFHji6gUallUQ0hPSkQxbjQ=w2556-h1762-iv1" style="height:500px; float: right; margin: 5px 0 40px 40px;">
                 </div>
-                <h4>The serious stuff</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <h4>Problems</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <h4>Research</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h5>Company Context</h5><p>ClickTime is a time and expense management application with over 15 years of experience. Within the more recent years, the company has added two UI/UX Designers (me being one) who have spearheaded the user research efforts for the product.</p>
+                <h5>Internal Need</h5><p>Prior to the small design team of two, there was virtually no documentation or any research surrounding our existing users. The Lead Designer and I both saw this as a gap in our knowledge and felt that having meaningful insight into our users behaviors was essential in building a stronger product. Our efforts to incorporate user research sparked conversations within the company and the facilitation of the internal Personas Workshop with our stakeholders.</p>
+                <h5>Stakeholders Involved</h5><p>CEO  |  Support Manager  |  Sr. Account Executive x 2  |  Sales Manager  |  Sr. Product Manager</p>
+                <h5>My Role & Responsibilities</h5>
+                <ul>
+                    <li>Conducted research on how to conduct research</li>
+                    <li>Produced personas workshop outline, presentation, and workshop activities</li> 
+                    <li>Led the facilitation of the Personas Workshop</li>
+                    <li>Produced the graphic templates for the Personas Cards (seen below)</li>
+                </ul>
+                <p class="subtext">Disclaimer: The content of the deliverables seen below are intentionally blocked as they are internal resources.</p>
+                <img src="images/personas_1.png"/ >
+                <img src="images/personas_2.png"/ >
+                <img src="images/personas_3.png"/ >
+                <img src="images/personas_4.png"/ >
+                <img src="images/personas_5.png"/ >
+                <img src="images/personas_6.png"/ >
                 <div class="uk-modal-footer uk-padding-small">
                     <ul class="uk-pagination">
                         <li><a onclick="javascript:scrollUp('#modal-one');" href="" uk-toggle="target: #modal-one"><span class="uk-margin-small-right" uk-pagination-previous></span>Previous project</a></li>
@@ -359,7 +367,36 @@
                     <img src="http://i2.cdn.turner.com/money/dam/assets/150803163324-surviving-long-flights-780x439.jpg">
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h4 class="section-title">Day View UI Refresh</h4>
+                <figure class="cd-image-container">
+                    <img src="images/DV - old.png" alt="Original UI">
+                    <span class="cd-image-label" data-type="original">Old UI</span>
+                    <div class="cd-resize-img"> <!-- the resizable image on top -->
+                        <img src="images/DV - updated.png" alt="Refreshed UI">
+                        <span class="cd-image-label" data-type="modified">Updated UI</span>
+                    </div>
+                    <span class="cd-handle"></span>
+                </figure>
+                <h4 class="section-title">Week View UI Refresh</h4>
+                <figure class="cd-image-container">
+                    <img src="images/WV - old.png" alt="Original UI">
+                    <span class="cd-image-label" data-type="original">Old UI</span>
+                    <div class="cd-resize-img"> 
+                        <img src="images/WV - updated.png" alt="Refreshed UI">
+                        <span class="cd-image-label" data-type="modified">Updated UI</span>
+                    </div>
+                    <span class="cd-handle"></span>
+                </figure>
+                <h4 class="section-title">Timesheet View UI Refresh</h4>
+                <figure class="cd-image-container">
+                    <img src="images/TSV - old.png" alt="Original UI">
+                    <span class="cd-image-label" data-type="original">Old UI</span>
+                    <div class="cd-resize-img"> 
+                        <img src="images/TSV - updated.png" alt="Refreshed UI">
+                        <span class="cd-image-label" data-type="modified">Updated UI</span>
+                    </div>
+                    <span class="cd-handle"></span>
+                </figure>
                 <div class="uk-modal-footer uk-padding-small">
                     <ul class="uk-pagination">
                         <li><a onclick="javascript:scrollUp('#modal-two');" href="" uk-toggle="target: #modal-two"><span class="uk-margin-small-right" uk-pagination-previous></span>Previous project</a></li>
@@ -374,13 +411,14 @@
         <div class="uk-modal-dialog uk-modal-body" uk-overflow-auto>
             <button class="uk-modal-close-full" type="button" uk-close></button>
             <div class="uk-padding-large uk-padding-remove-bottom uk-padding-remove-top">
-                <h2>ClickTime Pro Services</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <div>
-                    <img src="http://i2.cdn.turner.com/money/dam/assets/150803163324-surviving-long-flights-780x439.jpg">
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h2>Augmented Reality Fitness Goggles</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <img src="images/ar_1.png"/ >
+                <img src="images/ar_2.png"/ >
+                <img src="images/ar_3.png"/ >
+                <img src="images/ar_4.png"/ >
+                <img src="images/ar_5.png"/ >
+                <img src="images/ar_6.png"/ >
                 <div class="uk-modal-footer uk-padding-small">
                     <ul class="uk-pagination">
                         <li><a onclick="javascript:scrollUp('#modal-three');" href="" uk-toggle="target: #modal-three"><span class="uk-margin-small-right" uk-pagination-previous></span>Previous project</a></li>
@@ -395,7 +433,7 @@
         <div class="uk-modal-dialog uk-modal-body" uk-overflow-auto>
             <button class="uk-modal-close-full" type="button" uk-close></button>
             <div class="uk-padding-large uk-padding-remove-bottom uk-padding-remove-top">
-                <h2>Project #5</h2>
+                <h2>ClickTime Pro Services</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <div>
                     <img src="http://i2.cdn.turner.com/money/dam/assets/150803163324-surviving-long-flights-780x439.jpg">
@@ -417,12 +455,14 @@
             <button class="uk-modal-close-full" type="button" uk-close></button>
             <div class="uk-padding-large uk-padding-remove-bottom uk-padding-remove-top">
                 <h2>Bootlegger's Far Out IPA</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <div>
-                    <img src="http://i2.cdn.turner.com/money/dam/assets/150803163324-surviving-long-flights-780x439.jpg">
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <img src="images/bootleggers_1.png"/ >
+                <img src="images/bootleggers_2.png"/ >
+                <img src="images/bootleggers_3.png"/ >
+                <img src="images/bootleggers_4.png"/ >
+                <img src="images/bootleggers_5.png"/ >
+                <img src="images/bootleggers_6.png"/ >
+                <img src="images/bootleggers_7.png"/ >
                 <div class="uk-modal-footer uk-padding-small">
                     <ul class="uk-pagination">
                         <li><a onclick="javascript:scrollUp('#modal-five');" href="" uk-toggle="target: #modal-five"><span class="uk-margin-small-right" uk-pagination-previous></span>Previous project</a></li>
@@ -490,6 +530,7 @@
         }
 
     </script>
-
+    <script src="js/jquery.mobile.custom.min.js"></script> <!-- Resource jQuery -->
+    <script src="js/main.js"></script> <!-- Resource jQuery -->
 </body>
 </html>
