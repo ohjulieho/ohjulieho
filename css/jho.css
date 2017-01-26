@@ -1,7 +1,12 @@
-/*img {
-	height: 100vh;
-	width: 100vw;
-}*/
+
+/* -- julie's brand info! -- */
+/* ------------------------- */
+
+/* main color - #5FBFC2  */
+/* 		  60% - #9FD9DB  */
+/* 		  40% - #BFE6E7  */
+/*	   darker - #6EBABC  */
+
 
 html { /*
 	background: url(../images/ohjulieho.jpg) no-repeat center center fixed; */
@@ -139,6 +144,13 @@ span.strong {
 	color: #fafafa;
 }
 
+.subtext {
+	font-size: .87em;
+	color: #A7A7A7;
+	font-style: italic; 
+}
+
+
 /* ----------- buttons & links ----------- */
 /* --------------------------------------- */
 
@@ -180,38 +192,6 @@ span.strong {
 	border-bottom: 1px dotted #5FBFC2;
 }
 
-.subtext {
-	font-size: .87em;
-	color: #A7A7A7;
-	font-style: italic; 
-}
-
-/*#project-tag {
-	white-space: nowrap;
-	text-overflow: ellipsis;
-	overflow: auto;
-}*/
-
-.project-tag {
-	font-size: .85em;
-	color: #A7A7A7;
-	bottom: -18px;
-	position: relative;
-	font-style: italic; 
-	white-space: nowrap;
-	text-overflow: ellipsis;
-	overflow: auto;
-}
-
-.project-tag:before {
-	margin-right: 8px;
-	color: #ccc;
-	font-size: 1.1em;
-	content: "\f292";
-	font-family: "fontawesome";
-}
-
-
 svg {
 	height: 2em;
     width: 2em;
@@ -251,6 +231,7 @@ svg {
 
 .project-behance-inset p {
 	width: 136px;
+    padding-top: 13px;
 }
 
 .project-card {
@@ -262,9 +243,15 @@ svg {
 	box-shadow: 0 0 16px #ccc
 }
 
+.project-card h4 {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: auto;
+}
+
 .project-card-link {
 	background: #82CACC;
-	border-top: 2px solid #6EBABC#6EBABC;
+	border-top: 2px solid #6EBABC;
 	padding: 10px 0 10px 0;
 	width: 100%;
 	display: inline-block;
@@ -284,12 +271,6 @@ svg {
 	animation: bounceRight 1.25s infinite;
 }
 
-/*.project-card-link:after {
-	margin-left: 8px;
-	content: "\f0da";
-	font-family: "fontawesome";
-}
-*/
 .project-content {
 	padding: 13px;
 }
@@ -301,6 +282,36 @@ svg {
 
 .project-img:hover {
 	opacity: .8;
+}
+
+#project-seven:hover, #project-seven img, #project-seven .project-card-link {
+	cursor: not-allowed;
+}
+
+.project-section{
+	padding: 11em;
+	font-size: 1.2em;
+	border-bottom: 3px solid #BFE6E7;
+    border-top: 3px solid #BFE6E7;
+}
+
+.project-tag {
+	font-size: .85em;
+	color: #A7A7A7;
+	bottom: -18px;
+	position: relative;
+	font-style: italic; 
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: auto;
+}
+
+.project-tag:before {
+	margin-right: 8px;
+	color: #ccc;
+	font-size: 1.1em;
+	content: "\f292";
+	font-family: "fontawesome";
 }
 
 
@@ -317,8 +328,11 @@ svg {
 	display: inline-block;
 	text-align: left;
 	width: 22%;
-	padding: 33px;
-	margin: 0 0 0 25px;
+	padding: 25px 25px 25px 0;
+}
+
+.value-card .project-content {
+	padding: 5px;
 }
 
 .values h4 {
@@ -333,16 +347,9 @@ svg {
 .values i {
 	color: #589192;
 	font-size: 1.1em;
+	display: inline-block;
 }
 
-/*.values h4:before {
-	margin-right: 8px;
-	color: white;
-	font-size: 1em;
-	content: "\f006";
-	font-family: "fontawesome";
-}
-*/
 .values h3 {
 	color: white;
 }
@@ -350,6 +357,7 @@ svg {
 .values p {
 	color: white;
 	opacity: .8;
+	margin: 10px 23px 0px 33px
 }
 
 /* -------------- closing ---------------- */
