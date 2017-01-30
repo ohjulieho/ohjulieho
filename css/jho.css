@@ -127,7 +127,6 @@ ul li {
 	font-family: 'asap', sans-serif;
     color: #676767;
     font-size: 1em;
-    font-size: 15px;
     letter-spacing: .3px;
 }
 
@@ -314,6 +313,9 @@ svg {
 	font-family: "fontawesome";
 }
 
+.cd-image-container + .subtext {
+	text-align: center;
+}
 
 /* --------------- values ---------------- */
 /* --------------------------------------- */
