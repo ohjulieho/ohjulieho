@@ -283,7 +283,8 @@ svg {
 	opacity: .8;
 }
 
-#project-seven:hover, #project-seven img, #project-seven .project-card-link {
+#project-seven:hover, #project-seven img, #project-seven .project-card-link
+#project-five:hover, #project-five img, #project-five .project-card-link {
 	cursor: not-allowed;
 }
 
@@ -618,21 +619,6 @@ svg {
         left: 570px;
     }
 }
-
-/*@keyframes bounceRight {
-	0%, 100%, 20%, 50% {
-	    transform: translateX(0);
-	}
-	40% {
-	    transform: translateX(15px);
-	}
-	60% {
-	    transform: translateX(10px);
-	}
-	80% {
-	    transform: translateX(5px);
-	}
-}*/
 
 
 @keyframes bounceRight {
