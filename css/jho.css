@@ -212,6 +212,7 @@ svg {
 	float: right;
 	width: 22%;
 	margin: 0 10px 25px 10px;
+	border: 1px solid transparent;
 }
 
 .project-behance img {
@@ -272,6 +273,8 @@ svg {
 
 .project-content {
 	padding: 13px;
+	position: relative;
+	height: 225px;
 }
 
 .project-img {
@@ -298,8 +301,9 @@ svg {
 .project-tag {
 	font-size: .85em;
 	color: #A7A7A7;
-	bottom: -18px;
-	position: relative;
+	bottom: 0px;
+	width: 91%;
+	position: absolute;
 	font-style: italic; 
 	white-space: nowrap;
 	text-overflow: ellipsis;
@@ -312,6 +316,10 @@ svg {
 	font-size: 1.1em;
 	content: "\f292";
 	font-family: "fontawesome";
+}
+
+.project-title {
+	white-space: nowrap;
 }
 
 .cd-image-container + .subtext {
@@ -332,6 +340,8 @@ svg {
 	text-align: left;
 	width: 22%;
 	padding: 25px 25px 25px 0;
+	vertical-align: top;
+	height: 150px;
 }
 
 .value-card .project-content {
@@ -360,7 +370,8 @@ svg {
 .values p {
 	color: white;
 	opacity: .8;
-	margin: 10px 23px 0px 33px
+	padding: 16px;
+    margin: 10px 23px 0px 0px;
 }
 
 /* -------------- closing ---------------- */
