@@ -223,7 +223,7 @@ svg {
 .project-behance-inset {
 	height: 140px;
 	width: 140px;
-	margin: 132px 0px 0 45px;
+	margin: 132px 0px 0 60px;
 	border-radius: 50%;
 	border: 2px dashed #ccc;
 	background: #ebebeb;
@@ -292,7 +292,7 @@ svg {
 }
 
 .project-section{
-	padding: 11em;
+	padding: 11em 8em 11em 8em;
 	font-size: 1.2em;
 	border-bottom: 3px solid #BFE6E7;
     border-top: 3px solid #BFE6E7;
@@ -370,8 +370,7 @@ svg {
 .values p {
 	color: white;
 	opacity: .8;
-	padding: 16px;
-    margin: 10px 23px 0px 0px;
+    margin: 10px 15px 0px 0px;
 }
 
 /* -------------- closing ---------------- */
