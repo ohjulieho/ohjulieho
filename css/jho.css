@@ -127,7 +127,12 @@ ul li {
 	font-family: 'asap', sans-serif;
     color: #676767;
     font-size: 1em;
+    line-height: 1.4em;
     letter-spacing: .3px;
+}
+
+ul li:first-child {
+    margin-top: -16px;
 }
 
 span.strong {
@@ -175,7 +180,7 @@ span.strong {
 	margin-right: 5px;
 }
 
-.jh-button:hover, .social-link:hover .uk-link:hover {
+.jh-button:hover, .social-link:hover, .uk-link:hover {
 	opacity: .6;
     text-decoration: none;
 }
@@ -190,6 +195,7 @@ span.strong {
 	color: #A4A4A4;
 	border-bottom: 1px dotted #5FBFC2;
 }
+
 
 svg {
 	height: 2em;
@@ -286,8 +292,7 @@ svg {
 	opacity: .8;
 }
 
-#project-seven:hover, #project-seven img, #project-seven .project-card-link
-#project-five:hover, #project-five img, #project-five .project-card-link {
+#project-seven:hover, #project-seven img, #project-seven .project-card-link {
 	cursor: not-allowed;
 }
 
