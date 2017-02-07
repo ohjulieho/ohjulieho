@@ -25,7 +25,7 @@
     </head>
     <body>
     <div id="fullpage">
-        <div class="section active" id="test">
+        <div class="section" id="main">
             <div class="intro">
             <!-- (animation) - monster -->
                 <a id="rotator" href="#modal-about" uk-toggle><img src="images/jhMonster.png" /></a>
@@ -45,6 +45,9 @@
                         <a class="jh-button jh-button-primary" type="button" href="#recent-work">See Featured Projects</a>
                         <a class="jh-button jh-button-secondary" type="button" href="images/Julie Ho_Resume.pdf" target="_blank">View my Resume</a>
                     </div>
+                </div>
+                <div class="scroll-down fadeIn">
+                    <a href="#recent-work"><i class="fa fa-angle-down animated bounce"></i></a>
                 </div>
             </div>
         </div>
@@ -574,7 +577,7 @@
     </div>
 
     <script type="text/javascript">
-        var scrollPoint = '#test';
+        var scrollPoint = '#main';
         var scrollSpeed = 500;
         var gutter = 30;
         var scrolling = false;
