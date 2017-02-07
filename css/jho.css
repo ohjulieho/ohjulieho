@@ -123,16 +123,16 @@ i {
 	margin-left: 6px;
 }
 
+.p-ul {
+	margin-bottom: 0;
+}
+
 ul li {
 	font-family: 'asap', sans-serif;
     color: #676767;
     font-size: 1em;
     line-height: 1.4em;
     letter-spacing: .3px;
-}
-
-ul li:first-child {
-    margin-top: -16px;
 }
 
 span.strong {
