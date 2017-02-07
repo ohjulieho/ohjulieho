@@ -69,12 +69,16 @@ body {
 	bottom: 15px;
 	text-align: center;
 	left: 50%;
-	margin-left: -10px;
+	margin-left: -45px;
 }
 
 .scroll-down i {
 	display: block;
-	font-size: 3em;
+	font-size: 2.2em;
+}
+
+.scroll-down .subtext {
+	margin-bottom: 8px;
 }
 
 /* -------------- typography ------------- */
@@ -665,18 +669,18 @@ svg {
 		animation: bounce 1.25s infinite;
         -webkit-animation-fill-mode: both; 
         animation-fill-mode: both; 
-         }
+        }
          
          @-webkit-keyframes bounce { 
             0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
-            40% {-webkit-transform: translateY(-30px);} 
-            60% {-webkit-transform: translateY(-15px);} 
+            40% {-webkit-transform: translateY(-15px);} 
+            60% {-webkit-transform: translateY(-5px);} 
          } 
          
          @keyframes bounce { 
             0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
-            40% {transform: translateY(-30px);} 
-            60% {transform: translateY(-15px);} 
+            40% {transform: translateY(-15px);} 
+            60% {transform: translateY(-5px);} 
          }
          
 .bounce { 
