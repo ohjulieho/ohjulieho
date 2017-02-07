@@ -2,46 +2,616 @@
 <html>
     <head>
         <title>Julie Ho | UI & UX Designer</title>
-        <link rel="stylesheet" href="css/uikit.all.min.css" />
-		<link rel="stylesheet" href="css/uikit.almost-flat.min.css" />
-		<link href="https://fonts.googleapis.com/css?family=PT+Sans|Pontano+Sans|Playfair+Display" rel="stylesheet">
-		<link rel="icon" type="image/png" href="images/favicon.png">
+        <link rel="stylesheet" href="css/uikit-core.css" />
         <link rel="stylesheet" href="css/jho.css" />
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans|Pontano+Sans|Playfair+Display|asap" rel="stylesheet">
+		<link rel="icon" type="image/png" href="images/favicon.png">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-        <script src="js/uikit.all.min.js"></script>
+        <script src="js/uikit-new.min.js"></script>
+        <script src="js/jquery.fullPage.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+
+        <!-- image comparison slider -->
+
+        <script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+        <script type="text/javascript" src="js/scrolloverflow.js"></script>
+        <script type="text/javascript" src="js/jquery.fullPage.js"></script>
     </head>
     <body>
-    	<a id="rotator"><img src="images/jhMonster.png" /></a>
-    	<div class="social-section">
-    		<ul>
-    			<li><a href="http://www.instagram.com/ohjulieho" class="social-link" target="_blank">instagram.com/ohjulieho</a><i class="fa fa-instagram"></i></li>
-    			<li><a href="http://www.linkedin.com/in/ohjulieho" class="social-link" target="_blank">linkedin.com/in/ohjulieho</a><i class="fa fa-linkedin"></i></li>
-    			<li><a href="http://www.twitter.com/ohjulieho" class="social-link" target="_blank">twitter.com/ohjulieho</a><i class="fa fa-twitter"></i></li>
-    		</ul>
-    	</div>
-	    <div id="top-content">
-	    	<div class="intro"> 
-	    		<h1>More than just a pretty interface.</h1>
-	    		<h3>Hello! My name is <span class="strong">Julie Ho</span> and I’m a UI & UX Designer with web development chops. If you’re looking to work with a versatile and fun-loving designer, let’s get in touch! </h3>
-	    		<a class="jh-button jh-button-primary" type="button" href="https://www.behance.net/ohjulieho" target="_blank">Go to Behance Portfolio</a>
-	    		<a class="jh-button jh-button-secondary" type="button" href="images/Julie Ho_Resume.pdf" target="_blank">View my Resume</a>
-	    		<p class="subtext">Website & portfolio under construction. (December 15, 2016)</p>
-	    	</div>
-		</div>
+    <div id="fullpage">
+        <div class="section active" id="test">
+            <div class="intro">
+            <!-- (animation) - monster -->
+                <a id="rotator" href="#modal-about" uk-toggle><img src="images/jhMonster.png" /></a>
+                <div class="social-section">
+                    <ul>
+                        <li><a href="#modal-about" uk-toggle class="social-link" target="_blank">about julie ho</a><i class="fa fa-female"></i></li>
+                        <li><a href="http://www.instagram.com/ohjulieho" class="social-link" target="_blank">instagram.com/ohjulieho</a><i class="fa fa-instagram"></i></li>
+                        <li><a href="http://www.linkedin.com/in/ohjulieho" class="social-link" target="_blank">linkedin.com/in/ohjulieho</a><i class="fa fa-linkedin"></i></li>
+                        <li><a href="http://www.twitter.com/ohjulieho" class="social-link" target="_blank">twitter.com/ohjulieho</a><i class="fa fa-twitter"></i></li>
+                    </ul>
+                </div>
+                <!-- (section) - intro -->
+                <div class="top-content">
+                    <div> 
+                        <h1>More than just a pretty interface.</h1>
+                        <h3>Hello! My name is <span class="strong">Julie Ho</span> and I’m a UI & UX Designer with web development chops. If you’re looking to work with a versatile and fun-loving designer, let’s get in touch! </h3>
+                        <a class="jh-button jh-button-primary" type="button" href="#recent-work">See Featured Projects</a>
+                        <a class="jh-button jh-button-secondary" type="button" href="images/Julie Ho_Resume.pdf" target="_blank">View my Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- recent work-->
+        <!--            -->
+        <div class="section recent-work" id="recent-work">
+        <h3 class="section-title">Featured Projects</h3>  
+            <!-- project one -->
+            <!--             -->
+            <div class="project-card" id="project-one">
+                <div class="project-img" href="#modal-one" uk-toggle>
+                    <img src="images/preview_style_guide.png">
+                </div>
+                <div class="project-content">
+                    <div class="project-title">
+                        <h4>ClickTime Style Guide</h4>
+                    </div>
+                    <div id="project-blurb">
+                        <p>I championed visual consistency and UI modernization at ClickTime through the creation and development of their first internal style guide and UI components library.</p>
+                    </div>
+                    <div>
+                        <p class="project-tag">user interface, web dev, documentation, style guide</p>
+                    </div>
+                </div>
+                <a class="project-card-link" href="#modal-one" uk-toggle>Read more about this project<i class="fa fa-caret-right fa-animate"></i></a>
+            </div>
+            <!-- project two -->
+            <!--             -->
+            <div class="project-card" id="project-two">
+                <div class="project-img" href="#modal-two" uk-toggle>
+                    <img src="images/preview_personas_workshop.png">
+                </div>
+                <div class="project-content">
+                    <div class="project-title">
+                        <h4>Personas Workshop</h4>
+                    </div>
+                    <div id="project-blurb">
+                        <p>I planned and conducted the internal workshop at ClickTime that resulted in the creation of high-level personas built around user needs, motivations, and pain points.</p>
+                    </div>
+                    <div>
+                        <p class="project-tag">user research, workshop, presentation, personas</p>
+                    </div>
+                </div>
+                <a class="project-card-link" href="#modal-two" uk-toggle>Read more about this project<i class="fa fa-caret-right fa-animate"></i></a>
+            </div>
+            <!-- project three -->
+            <!--               -->
+            <div class="project-card" id="project-three">
+                <div class="project-img" href="#modal-three" uk-toggle>
+                    <img src="images/preview_time_entry.png">
+                </div>
+                <div class="project-content">
+                    <div class="project-title">
+                        <h4>Time Entry UI Refresh</h4>
+                    </div>
+                    <div id="project-blurb">
+                        <p>I led the project for the user interface refresh project for ClickTime's highest trafficked webpages and as well as contributed to the front-end implementation.</p>
+                    </div>
+                    <div>
+                        <p class="project-tag">user interface, web dev, pair programming</p>
+                    </div>
+                </div>
+                <a class="project-card-link" href="#modal-three" uk-toggle>Read more about this project<i class="fa fa-caret-right fa-animate"></i></a>
+            </div>
+            <!-- project four -->
+            <!--             -->
+            <div class="project-card" id="project-four">
+                <div class="project-img" href="#modal-four" uk-toggle>
+                    <img src="images/preview_ar.png">
+                </div>
+                <div class="project-content">
+                    <div class="project-title">
+                        <h4>Augmented Reality Fitness Googles</h4>
+                    </div>
+                    <div id="project-blurb">
+                        <p>A concept for fitness goggles using augmented reality. The user would navigate through obstacles and have a corresponding app for music and stats.</p>
+                    </div>
+                    <div>
+                        <p class="project-tag">product design, augmented reality, UI/UX</p>
+                    </div>
+                </div>
+                <a class="project-card-link" href="#modal-four" uk-toggle>Read more about this project<i class="fa fa-caret-right fa-animate"></i></a>
+            </div>
+            <!-- project five -->
+            <!--              -->
+            <div class="project-card" id="project-five">
+                <div class="project-img" href="#modal-five" uk-toggle>
+                    <img src="images/preview_logos.png">
+                </div>
+                <div class="project-content">
+                    <div class="project-title">
+                        <h4>Logo Design</h4>
+                    </div>
+                    <div id="project-blurb">
+                        <p>Featuring various logo designs for various local businesses, non-profit organizations, friends, and family when I freelance on my spare time.</p>
+                    </div>
+                    <div>
+                        <p class="project-tag">illustration, graphic design, branding</p>
+                    </div>
+                </div>
+                <a class="project-card-link" href="#modal-five" uk-toggle>Read more about this project<i class="fa fa-caret-right fa-animate"></i></a>
+            </div>
+            <!-- project six -->
+            <!--             -->
+            <div class="project-card" id="project-six">
+                <div class="project-img" href="#modal-six" uk-toggle>
+                    <img src="images/preview_bootleggers.png">
+                </div>
+                <div class="project-content">
+                    <div class="project-title">
+                        <h4>Bootlegger's Far Out IPA</h4>
+                    </div>
+                    <div id="project-blurb">
+                        <p>The former IPA beer label was in need of major makeover. Being a beer enthusiast myself, I was excited when I was asked to create the new look of this groovy, hoppy beer!</p>
+                    </div>
+                    <div>
+                        <p class="project-tag">graphic design, packaging, FMCG, beer!</p>
+                    </div>
+                </div>
+                <a class="project-card-link" href="#modal-six" uk-toggle>Read more about this project<i class="fa fa-caret-right fa-animate"></i></a>
+            </div>
+            <!-- project seven -->
+            <!--               -->
+            <div class="project-card" id="project-seven">
+                <div class="project-img">
+                    <img src="images/preview_hack_congress2.png">
+                </div>
+                <div class="project-content">
+                    <div class="project-title">
+                        <h4>Hack Congress Website (Coming Soon)</h4>
+                    </div>
+                    <div id="project-blurb">
+                        <p>This is a passion project in progress with myself and a good friend who is currently developing the site. I designed the website, logo, and the style guide for Hack Congress. </p>
+                    </div>
+                    <div>
+                        <p class="project-tag">landing page, visual design, branding, logo design</p>
+                    </div>
+                </div>
+                <a class="project-card-link">Read more about this project<i class="fa fa-caret-right fa-animate"></i></a>
+            </div>
+            <!-- project behance --
+            <!--                 -->
+            <div class="project-behance">
+                <a href="http://www.behance.net/ohjulieho" target="_blank">
+                    <div class="project-behance-inset">
+                        <img src="images/favicon.png" />
+                        <p>See more projects on Behance</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- (section) - values -->
+        <div class="section values"><h3 class="section-title">My Values</h3>
+            <div class="value-card">
+                <div class="project-content">
+                    <div class="project-title">
+                        <i class="fa fa-handshake-o"></i><h4 class="h4-value">Respect Everyone</h4>
+                    </div>
+                    <div>
+                        <p class="p-value">Considering other perspectives can only result in diverse and creative options to explore.</p>
+                    </div>
+                </div>
+            </div><!--
+            --><div class="value-card">
+                <div class="project-content">
+                    <div class="project-title">
+                        <i class="fa fa-book"></i><h4 class="h4-value">Never Stop Learning</h4>
+                    </div>
+                    <div>
+                        <p class="p-value">Inside and outside the office, I'm constantly asking questions and seeking more knowledge.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="value-card">
+                <div class="project-content">
+                    <div class="project-title">
+                        <i class="fa fa-bolt"></i><h4 class="h4-value">Share & Move Fast</h4>
+                    </div>
+                    <div>
+                        <p class="p-value">Never be afraid to collaborate, share, and offer suggestions and execute when there is an opportunity.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="clear">
+            </div>
+            <div class="value-card">
+                <div class="project-content">
+                    <div class="project-title">
+                        <i class="fa fa-eye"></i><h4 class="h4-value">Stay Open & Compassionate</h4>
+                    </div>
+                    <div>
+                        <p class="p-value">Design is all about people and shouldn't be treated as an isolated activity or single thought.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="value-card">
+                <div class="project-content">
+                    <div class="project-title">
+                        <i class="fa fa-plane"></i><h4 class="h4-value">Travel Often</h4>
+                    </div>
+                    <div>
+                        <p class="p-value">Exploring our world helps me cultivate new ways of thinking and embrace the unfamiliar.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="value-card">
+                <div class="project-content">
+                    <div class="project-title">
+                        <i class="fa fa-thumbs-o-up"></i><h4 class="h4-value">Do The Best You Can</h4>
+                    </div>
+                    <div>
+                        <p class="p-value">This one has been ingrained since childhood and has become my mantra. Thanks dad!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- (section) - closing -->
+            <div class="closing"><h3 class="section-title">Let's Connect!</h3>
+                <div class="modal-social-links">
+                    <a href="#modal-about" uk-toggle class="social-link" target="_blank"><img src="images/julie3.png" style="height:22px; margin:-6px 6px 0 0;"></a>
+                    <a href="mailto:dearjulieho@gmail.com?subject=Dear Julie Ho!"class="social-link" target="_blank"><i class="fa fa-envelope-o"></i></a>
+                    <a href="http://www.instagram.com/ohjulieho" class="social-link" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="http://www.linkedin.com/in/ohjulieho" class="social-link" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <a href="http://www.twitter.com/ohjulieho" class="social-link" target="_blank"><i class="fa fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- section of modals!!!! -->
+
+    <!-- (modal) about me -->
+    <div id="modal-about" class="uk-modal-full" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-full" type="button" uk-close></button>
+            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle uk-grid" uk-grid>
+                <div class="uk-background-cover uk-first-column" style="background-image: url('images/ohjulieho2.jpg');" uk-height-viewport>
+                </div>
+                <div class="uk-padding-large">
+                    <h2>About Julie Ho</h2>
+                    <h4>Hello! I'm a UI & UX Designer looking for work in the Boston Area. I've spent the last 2 years in the SF Bay Area designing in enterprise software and picking up freelance projects on the side. Visual design is a skill I'm passionate about and I'm quickly ramping up my front-end development skills.</h4>
+                    <h4>While in my previous role, I learned that I enjoy distilling and organizing content into elegant pieces for others to enjoy and use. For example, one of my favorite projects was designing and developing the <a href="#modal-one" uk-toggle>company's first style guide.</a></h4>
+                    <h4>When I'm not nose-deep in pixels, you can find me enjoying the company of my friends and family or collecting stamps on my passport for my next adventure. I'm currently in my next phase of my career, so if you or someone you know is looking for a versatile designer to work with, <a href="mailto:dearjulieho@gmail.com?subject=Dear Julie Ho!"> let's get in touch!</a></h4>
+                    <div class="modal-social-links">
+                        <a href="file:///Users/julieho/Desktop/Projects/ohjulieho/images/Julie%20Ho_Resume.pdf" class="social-link" target="_blank" alt="View my resume"><i class="fa fa-file-text"></i></a>
+                        <a href="http://www.instagram.com/ohjulieho" class="social-link" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="http://www.linkedin.com/in/ohjulieho" class="social-link" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="http://www.twitter.com/ohjulieho" class="social-link" target="_blank"><i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- (modal) project one -->
+    <div id="modal-one" class="uk-modal-full uk-modal" uk-modal uk-height-viewport>
+        <div class="uk-modal-dialog uk-modal-body" uk-overflow-auto>
+            <button class="uk-modal-close-full" type="button" uk-close></button>
+            <div class="uk-padding-large uk-padding-remove-bottom uk-padding-remove-top">
+                <h2>ClickTime Style Guide</h2>
+                <p class="subtext">I championed visual consistency and UI modernization at ClickTime through the creation and development of their first internal style guide and UI components library.</p>
+                <video controls autoplay loop>
+                  <source src="videos/Style_guide.mov" type="video/mp4">
+                </video>
+                <div class="project-section">
+                    <h3 class="section-title">Project Context</h3>
+                    <h5>Company Background</h5>
+                    <p>ClickTime is a time and expense management web application with over 17 years of experience. Prior to my addition to the small design team of two, the software had led itself to inconsistent UI/UX and accumulated design debt over the years. Being a strong supporter of visual consistency, I took this opportunity to design and develop the company's first style guide and its corresponding documentation.</p>
+                    <h5>Need for a Style Guide</h5>
+                    <ul>
+                        <li>Lacked visual references and documentation around in-app styling and conventions for the web components</li>
+                        <li>Increased inconsistencies due to the lack of standardized components</li>
+                        <li>Mixed user experiences and interactions (conscious & subconscious)</li>
+                        <li>User assumptions about a “broken" or messy product and poor branding impression</li>
+                    </ul>
+                    <h5>Value Provided</h5>
+                    <ul>
+                        <li>Serves as the leading guide for the Design, Product, Engineering, and QA teams</li>
+                        <li>Resolves ambiguity during software development and leads to product consistency</li>
+                        <li>Supports a positive company brand image by prioritizing visual cohesion within the product</li>
+                        <li>Increases user's confidence in the company's credibility and competency</li>
+                    </ul>
+                </div>
+                <img src="images/style_guide_2.png"/ >
+                <div class="project-section">
+                    <h3 class="section-title">Roles & Responsibilities</h3>
+                    <h5>As the UI Designer</h5>
+                   <ul>
+                        <li>Conducted extensive audits of the visual components in the web application</li>
+                        <li>Had full ownership to decide which components to slash and which to improve</li>
+                        <li>Built the UI components library in a Sketch file for faster prototyping that led to consistent mockups</li>
+                        <li>Provided thorough documentation about UI component behavior, examples within the app, and design specs</li>
+                    </ul>
+                    <h5>As the UI Developer</h5>
+                    <ul>
+                        <li>Fully developed the style guide with HTML, CSS, Javascript, jQuery and Bootstrap</li>
+                        <li>Used GitHub for version control, code review, and final handoff to development team after leaving company</li>
+                    </ul>
+                </div>
+                <img src="images/style_guide_2.5.png"/ >
+                <img src="images/style_guide_4.png"/ >
+                <img src="images/style_guide_3.png"/ >
+                <img src="images/style_guide_final.png"/ >
+                <div class="project-section">
+                    <h3 class="section-title">Reflection & Final Thoughts</h3>
+                    <h5>Challenges</h5>
+                    <p>Creating this style guide was no simple task and I had my fair share in technical as well as company-wide challenges. The creation of the style guide and UI components library was initially started as a side project to help with my core UI/UX responsibilities. As it began gaining traction, it steadily became a core project and required juggling with my other projects. Addditionally, because many of the older pages in the app used legacy code, the changes required several approvals and effort from other departments. The lack of design input in addition to the company's lack of prioritizing interface standardization has resulted in many layers for me to detangle and implement.</p>
+                    <h5>Looking Forward</h5>
+                    <p>During the implementation of the style guide, I quickly ramped up my front-end development skills as I was the main contributor and also learned so much about coding from my colleagues. As I had full ownership of the design components, I've provided a guidance for the software to move into a more modern and streamlined direction. At this point, the style guide is slowly decreasing design debt as it serves as a reference guide for the PMs, developers, and QA teams for new development and code refactoring. Though I am no longer at the company, I believe this guide will help the team's prospective designers acclimate to the software and also offer the space to improve its components.</p>
+                </div>
+                <div class="clear"></div>
+                <div class="uk-modal-footer uk-padding-small">
+                    <ul class="uk-pagination">
+                        <li class="uk-margin-auto-left"><a onclick="javascript:scrollUp('#modal-two');" href="" uk-toggle="target: #modal-two">Next project<span class="uk-margin-small-left" uk-pagination-next></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- (modal) project two -->
+    <div id="modal-two" class="uk-modal-full uk-modal" uk-modal uk-height-viewport>
+        <div class="uk-modal-dialog uk-modal-body" uk-overflow-auto>
+            <button class="uk-modal-close-full" type="button" uk-close></button>
+            <div class="uk-padding-large uk-padding-remove-bottom uk-padding-remove-top">
+                <h2>Personas Workshop</h2>
+                <p class="subtext">I planned and conducted the internal workshop at ClickTime that resulted in the creation of high-level personas built around user needs, motivations, and pain points.</p>
+                <div>
+                    <img src="https://lh3.google.com/u/0/d/0B3WvdFHji6gUallUQ0hPSkQxbjQ=w2556-h1762-iv1" style="height:500px; float: right; margin: 5px 0 40px 40px;">
+                </div>
+                <h5>Company Context</h5><p>ClickTime is a time and expense management application with over 15 years of experience. Within the more recent years, the company has added two UI/UX Designers (me being one) who have spearheaded the user research efforts for the product.</p>
+                <h5>Internal Need</h5><p>Prior to the small design team of two, there was virtually no documentation or any research surrounding our existing users. The Lead Designer and I both saw this as a gap in our knowledge and felt that having meaningful insight into our users behaviors was essential in building a stronger product. Our efforts to incorporate user research sparked conversations within the company and the facilitation of the internal Personas Workshop with our stakeholders.</p>
+                <h5>Stakeholders Involved</h5><p>CEO  |  Support Manager  |  Sr. Account Executive x 2  |  Sales Manager  |  Sr. Product Manager</p>
+                <h5>My Role & Responsibilities</h5>
+                <ul>
+                    <li>Conducted research on how to conduct research</li>
+                    <li>Researched users who tracked time for business</li>
+                    <li>Produced personas workshop outline, presentation, and workshop activities</li> 
+                    <li>Led the facilitation of the Personas Workshop</li>
+                    <li>Produced the graphic templates for the Personas Cards (seen below)</li>
+                </ul>
+                <h5>Current Usage</h5><p>These personas are used mainly in the Product Team during the development of new features. They are referenced to specific user stories in the internal product management software and are kept as a reminder than our users are real people with real needs and goals.</p>
+                <p class="subtext">Disclaimer: The content of the deliverables seen below are intentionally blocked as they are internal resources.</p>
+                <img src="images/personas_1.png"/ >
+                <img src="images/personas_2.png"/ >
+                <img src="images/personas_3.png"/ >
+                <img src="images/personas_4.png"/ >
+                <img src="images/personas_5.png"/ >
+                <img src="images/personas_6.png"/ >
+                <div class="uk-modal-footer uk-padding-small">
+                    <ul class="uk-pagination">
+                        <li><a onclick="javascript:scrollUp('#modal-one');" href="" uk-toggle="target: #modal-one"><span class="uk-margin-small-right" uk-pagination-previous></span>Previous project</a></li>
+                        <li class="uk-margin-auto-left"><a onclick="javascript:scrollUp('modal-three');" href="" uk-toggle="target: #modal-three">Next project<span class="uk-margin-small-left" uk-pagination-next></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- (modal) project three -->
+    <div id="modal-three" class="uk-modal-full uk-modal" uk-modal uk-height-viewport>
+        <div class="uk-modal-dialog uk-modal-body" uk-overflow-auto>
+            <button class="uk-modal-close-full" type="button" uk-close></button>
+            <div class="uk-padding-large uk-padding-remove-bottom uk-padding-remove-top">
+                <h2>Time Entry UI Refresh</h2>
+                <p class="subtext">I led the design for the user interface refresh for our highest trafficked pages and as well as contributed to the front-end implementation.</p>
+                <img src="images/time_entry_1.png"/ >
+                <div class="project-section">
+                    <h3 class="section-title">Project Context</h3>
+                    <h5>Company Background</h5>
+                    <p>ClickTime is a time and expense management web application with over 17 years of experience. The 3 time entry pages (Day View, Week View, and Timesheet View) embody the company's core time tracking functionality and highest number of user traffic.</p>
+                    <h5>Business Opportunity</h5>
+                    <p>Concurrently, ClickTime was making other improvements and additions to the product as it was ramping for the software's newest version release. We took this auspicious opportunity to include the refreshed interfaces for the 3 time tracking pages along with the new updates.</p>
+                    <h5>My Roles & Responsibilities</h5>
+                    <p class="p-ul">As the dedicated UI/UX designer:</p>
+                    <ul>
+                        <li>Conducted competitive analysis & research of ClickTime competitors</li>
+                        <li>Explored ways of modernizing the interface</li>
+                        <li>Intergrated the internal style guide to maintained visual cohesion and consistency</li>
+                        <li>Consulted Google Analytics to inform my decisions to remove unused functionality</li>
+                        <li>Updated copy to improve in-app messaging for clarity and a more professional tone</li>
+                        <li>Collaborated with a ClickTime software engineer to implement the UI changes</li>
+                    </ul>
+                    <p class="p-ul">As the ad hoc UI Developer:</p>
+                    <ul>
+                        <li>Used Chrome DevTools to inspect current UI components and its corresponding styling</li>
+                        <li>Provided code snippets for design specifications for Day View and Week View</li>
+                        <li>Implemented the UI changes for the Timesheet View page</li>
+                    </ul>
+                    <h5>Technical Constraints & Challenges</h5>
+                    <p>These pages have undergone multiple permutations and subtle changes over the years prior to my addition to the team. As a result, multiple layers had accumulated and the code had become fragile and suspective to breaking QA tests. Additionally, these 3 pages used a version of ExtJS Javascript framework that is no longer supported and led us to be very conscious of the library's constraints when making more substantial revisions to the interface.</p>
+                </div>
+                <img src="images/time_entry_2.png"/ >
+                <div class="project-section">
+                    <h3 class="section-title">Process</h3>
+                    <h5>Competitive Analysis & Research</h5>
+                    <p>To begin my research, I conducted a 5-week project of tracking my time with 5 different products— ClickTime being one. I chose 4 other competitor products and placed myself as a user who needed to track my time spent on projects.  After the 5 weeks, I held a company presentation to share my analysis and created a product map and feature comparison spreadsheet.</p>
+                    <h5>UI Prototypes + Style Guide</h5>
+                    <p>As I worked to modernize the interface of the 3 time entry pages, I was diligent in integrating the style guide to ensure the pages remained on-brand and consistent with one another. My biggest priorities included updating colors to match style guide, removing redudant or unused functionality and elements, uniforming the typgraphy and iconography, improving copy for messaging, and incorporating more intuitive user interactions with the interface. 
+                    <h5>Front-end Exploration & Implementation</h5>
+                    <p>There was a lot to be learned about the back-end and front-end of the targeted pages! Some steps involved in the discovery phase included: inspecting with Chrome Dev Tools, pair programming with ClickTime's Software Engineer Clara, and making additional changes on Sketch.Following this, Clara and I continued our collaboration and then I eventually committed my own code changes after getting my own Dev environment. (More info below)</p>
+                </div>
+                <img src="images/time_entry_4.png"/ >
+                <div class="project-section">
+                    <h3 class="section-title">Design & Front-end Development</h3>
+                    <h5>UI Exploration</h5>
+                    <p>Chrome Dev Tools quicky became my best friend as it was my main source of examining the code. From here, I worked specifically with the time entry pages and manipulating the CSS to see its affect on the the front-end components. Additionally, I took screenshots of the live page and then stitched together additional styling that I created in Sketch.</p>
+                    <h5>Pair Programming</h5>
+                    <p>I had the pleasure of collaborating with Clara for this project. After creating cases with design specifications, She and I sat side by side and hashed out the front-end changes to Day View and Week View pages.
+                    <h5>Getting my own Dev environment</h5>
+                    <p>After spending much time in DevTools and familiarzing myself with the front-end code, I received my own dev environment. I was able to commit my UI changes indepedently and had implemented Timesheet View page UI refresh on my own. Woo hoo!</p>
+                </div>
+                <img src="images/time_entry_5.png"/ >
+                <img src="images/time_entry_3.png"/ >
+                <div class="project-section">
+                    <h3 class="section-title">Final Thoughts</h3>
+                    <h5>Reflection</h5>
+                    <p>This project provided satisfying results as I had this opportunity make an impact on the product's core pages. Approaching the tasks was initially daunting and implementing these changes was no simple feat as I ran into technical constraints and limited development resources. Playing both the roles of Designer and Designer-turned-Developer had lent me to really enjoy learning about front-end development and appreciating the work of the software and QA engineers.</p>
+                    <h5>Looking Forward</h5>
+                    <p>At the time I had left the company, the time entry pages had completed about 80% of its conception. The several components I had prototyped with design specifications include the calendar ribbon portion and the date display. In the end, the UI refreshes for the time entry pages as it was released had received several appraisals and would provide guidance for the company's prospective UI refreshes. Scroll down below to compare the old and updated time entry pages</p>
+                </div>
+                <h3 class="section-title">Day View UI Refresh</h3>
+                <figure class="cd-image-container">
+                    <img src="images/DV - old.png" alt="Original UI">
+                    <span class="cd-image-label" data-type="original">Old UI</span>
+                    <div class="cd-resize-img"> <!-- the resizable image on top -->
+                        <img src="images/DV - updated.png" alt="Refreshed UI">
+                        <span class="cd-image-label" data-type="modified">Updated UI</span>
+                    </div>
+                    <span class="cd-handle"></span>
+                </figure>
+                <p class="subtext">Click and drag arrows to compare before and after</p>
+                <h3 class="section-title">Week View UI Refresh</h3>
+                <figure class="cd-image-container">
+                    <img src="images/WV - old.png" alt="Original UI">
+                    <span class="cd-image-label" data-type="original">Old UI</span>
+                    <div class="cd-resize-img"> 
+                        <img src="images/WV - updated.png" alt="Refreshed UI">
+                        <span class="cd-image-label" data-type="modified">Updated UI</span>
+                    </div>
+                    <span class="cd-handle"></span>
+                </figure>
+                <p class="subtext">Click and drag arrows to compare before and after</p>
+                <h3 class="section-title">Timesheet View UI Refresh</h3>
+                <figure class="cd-image-container">
+                    <img src="images/TSV - old.png" alt="Original UI">
+                    <span class="cd-image-label" data-type="original">Old UI</span>
+                    <div class="cd-resize-img"> 
+                        <img src="images/TSV - updated.png" alt="Refreshed UI">
+                        <span class="cd-image-label" data-type="modified">Updated UI</span>
+                    </div>
+                    <span class="cd-handle"></span>
+                </figure>
+                <p class="subtext">Click and drag arrows to compare before and after</p>
+                <div class="uk-modal-footer uk-padding-small">
+                    <ul class="uk-pagination">
+                        <li><a onclick="javascript:scrollUp('#modal-two');" href="" uk-toggle="target: #modal-two"><span class="uk-margin-small-right" uk-pagination-previous></span>Previous project</a></li>
+                        <li class="uk-margin-auto-left"><a uk-toggle="target: #modal-four">Next project<span class="uk-margin-small-left" uk-pagination-next></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- (modal) project four -->
+    <div id="modal-four" class="uk-modal-full uk-modal" uk-modal uk-height-viewport>
+        <div class="uk-modal-dialog uk-modal-body" uk-overflow-auto>
+            <button class="uk-modal-close-full" type="button" uk-close></button>
+            <div class="uk-padding-large uk-padding-remove-bottom uk-padding-remove-top">
+                <h2>Augmented Reality Fitness Goggles</h2>
+                <p class="subtext">A concept for fitness goggles using augmented reality. The user would navigate through obstacles and have a corresponding app for music and stats.</p>
+                <img src="images/ar_1.png"/ >
+                <img src="images/ar_2.png"/ >
+                <img src="images/ar_3.png"/ >
+                <img src="images/ar_4.png"/ >
+                <img src="images/ar_5.png"/ >
+                <img src="images/ar_6.png"/ >
+                <div class="uk-modal-footer uk-padding-small">
+                    <ul class="uk-pagination">
+                        <li><a onclick="javascript:scrollUp('#modal-three');" href="" uk-toggle="target: #modal-three"><span class="uk-margin-small-right" uk-pagination-previous></span>Previous project</a></li>
+                        <li class="uk-margin-auto-left"><a uk-toggle="target: #modal-five">Next project<span class="uk-margin-small-left" uk-pagination-next></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- (modal) project five -->
+    <div id="modal-five" class="uk-modal-full uk-modal" uk-modal uk-height-viewport>
+        <div class="uk-modal-dialog uk-modal-body" uk-overflow-auto>
+            <button class="uk-modal-close-full" type="button" uk-close></button>
+            <div class="uk-padding-large uk-padding-remove-bottom uk-padding-remove-top">
+                <h2>Logo Designs</h2>
+                <p class="subtext">Featuring various logo designs for various local businesses, non-profit organizations, friends, and family when I freelance on my spare time.</p>
+                    <img src="images/logo_1.png"/ >
+                    <img src="images/logo_2.png"/ >
+                    <img src="images/logo_3.png"/ >
+                    <img src="images/logo_4.png"/ >
+                    <img src="images/logo_5.png"/ >
+                    <img src="images/logo_6.png"/ >
+                    <img src="images/logo_7.png"/ >
+                <div class="uk-modal-footer uk-padding-small">
+                    <ul class="uk-pagination">
+                        <li><a onclick="javascript:scrollUp('#modal-four');" href="" uk-toggle="target: #modal-four"><span class="uk-margin-small-right" uk-pagination-previous></span>Previous project</a></li>
+                        <li class="uk-margin-auto-left"><a uk-toggle="target: #modal-six">Next project<span class="uk-margin-small-left" uk-pagination-next></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- (modal) project six -->
+    <div id="modal-six" class="uk-modal-full uk-modal" uk-modal uk-height-viewport>
+        <div class="uk-modal-dialog uk-modal-body" uk-overflow-auto>
+            <button class="uk-modal-close-full" type="button" uk-close></button>
+            <div class="uk-padding-large uk-padding-remove-bottom uk-padding-remove-top">
+                <h2>Bootlegger's Far Out IPA</h2>
+                <p class="subtext">The former IPA beer label was in need of major makeover. Being a beer enthusiast myself, I was excited when I was asked to create the new look of this groovy, hoppy beer!</p>
+                <img src="images/bootleggers_1.png"/ >
+                <img src="images/bootleggers_2.png"/ >
+                <img src="images/bootleggers_3.png"/ >
+                <img src="images/bootleggers_4.png"/ >
+                <img src="images/bootleggers_5.png"/ >
+                <img src="images/bootleggers_6.png"/ >
+                <img src="images/bootleggers_7.png"/ >
+                <div class="uk-modal-footer uk-padding-small">
+                    <ul class="uk-pagination">
+                        <li><a onclick="javascript:scrollUp('#modal-five');" href="" uk-toggle="target: #modal-four"><span class="uk-margin-small-right" uk-pagination-previous></span>Previous project</a></li>
+                        <li class="uk-margin-auto-left"><a uk-toggle="target: #modal-one">Next project<span class="uk-margin-small-left" uk-pagination-next></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var scrollPoint = '#test';
+        var scrollSpeed = 500;
+        var gutter = 30;
+        var scrolling = false;
+
+        document.addEventListener('scroll', e => {
+            if (scrolling) return false;
+
+            var scrollPos = document.body.scrollTop;
+            var offset = $(scrollPoint).offset();
+
+            var top = offset.top;
+            var bottom = offset.top + $(scrollPoint).outerHeight ();
+            var mid = (bottom - top) / 2;
+
+            if (scrollPos > (top + gutter) && scrollPos < (bottom - gutter )) {
+
+                scrolling = true;
+
+                $(document.body).animate({
+                    scrollTop: (scrollPos < mid) ? bottom : top, 
+                }, scrollSpeed, () => {
+                    scrolling = false;
+                });
+            }
+        });
 
 
-<!-- Google Analytics -->
-<script>
+        function scrollUp(el) {
+            console.log('scrolling...');
+            setTimeout(() => {
+                $(el + ' .uk-modal-dialog')[0].scrollTop = 0;
+            }, 0);
+        }
 
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    </script>
+    <script src="js/jquery.mobile.custom.min.js"></script> <!-- Resource jQuery -->
+    <script src="js/main.js"></script> <!-- Resource jQuery -->
 
-  ga('create', 'UA-89124301-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 </body>
 </html>
