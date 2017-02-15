@@ -5,7 +5,7 @@
 /* main color - #5FBFC2  */
 /* 		  60% - #9FD9DB  */
 /* 		  40% - #BFE6E7  */
-/*	   darker - #6EBABC  */
+/*	   darker - #329FA2  */
 
 
 html { /*
@@ -24,6 +24,7 @@ body {
 
 #main {
 	position: relative;
+	background: url(../images/main-background.png);
 }
 
 #spacer {
@@ -44,7 +45,7 @@ body {
 }
 
 .intro {
-	padding-top: 40px;
+	padding-top: 60px;
 	margin: 0 50px 0 50px;
 }
 
@@ -79,6 +80,8 @@ body {
 
 .scroll-down .subtext {
 	margin-bottom: 8px;
+	font-weight: bold;
+	color: white;
 }
 
 /* -------------- typography ------------- */
@@ -140,7 +143,8 @@ a {
 }
 
 i {
-  	color: #82CACC;
+  	color: white;
+  	opacity: .8;
 	margin-left: 6px;
 }
 
@@ -180,7 +184,6 @@ span.strong {
 
 .jh-button {
 	padding: 10px;
-	text-transform: uppercase;
 }
 
 .jh-button-primary {
@@ -201,19 +204,13 @@ span.strong {
 }
 
 .jh-button:hover, .social-link:hover, .uk-link:hover {
-	opacity: .6;
+	opacity: .85;
     text-decoration: none;
 }
 
-/*a {
-  color: #82CACC;
-  text-decoration: none;
-  cursor: pointer;
-}*/
-
 .social-link {
-	color: #A4A4A4;
-	border-bottom: 1px dotted #5FBFC2;
+	color: white;
+	/*border-bottom: 1px dotted white;*/
 }
 
 
@@ -222,6 +219,19 @@ svg {
     width: 2em;
 }
 
+
+/* ---------------- intro ---------------- */
+/* --------------------------------------- */
+
+#main h1 {
+	color: white;
+	text-shadow: 0 0 6px #888;
+}
+
+#main h3 {
+	color: white;
+	text-shadow: 0 0 3px #888;
+}
 
 /* -------------- projects --------------- */
 /* --------------------------------------- */
@@ -441,7 +451,8 @@ svg {
     -o-transition: all 1s ease-in-out; 
     -ms-transition: all 1s ease-in-out; 
     transition-duration: 1s;
-    margin-top: 155px;
+    margin-top: 180px;
+    margin-left: 30px;
     height: 60px;
  }
 
