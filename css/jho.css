@@ -201,6 +201,7 @@ span.strong {
 .intro .jh-button {
 	margin-top: 50px;
 	margin-right: 5px;
+	line-height: 39px;
 }
 
 .jh-button:hover, .social-link:hover, .uk-link:hover {
