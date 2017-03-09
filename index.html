@@ -11,6 +11,7 @@
         <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
         <script src="js/uikit-new.min.js"></script>
         <script src="js/jquery.fullPage.js"></script>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
 
         <!-- image comparison slider -->
         <script src="js/modernizr.js"></script> <!-- Modernizr -->
@@ -187,17 +188,20 @@
             </div>
             <!-- project behance --
             <!--                 -->
-            <div class="project-behance">
+<!--        <div class="project-behance">
                 <a href="http://www.behance.net/ohjulieho" target="_blank">
                     <div class="project-behance-inset">
                         <img src="images/favicon.png" />
                         <p>See more projects on Behance</p>
                     </div>
                 </a>
+            </div> -->
+            <div class="project-behance">
+                <a class="jh-button jh-button-primary" type="button" href="http://www.behance.net/ohjulieho">View More Projects on Behance</a>
             </div>
         </div>
         <!-- (section) - values -->
-        <div class="section values"><h3 class="section-title">My Values</h3>
+        <!-- <div class="section values"><h3 class="section-title">My Values</h3>
             <div class="value-card">
                 <div class="project-content">
                     <div class="project-title">
@@ -207,8 +211,8 @@
                         <p class="p-value">Considering other perspectives can only result in diverse and creative options to explore.</p>
                     </div>
                 </div>
-            </div><!--
-            --><div class="value-card">
+            </div>
+            <div class="value-card">
                 <div class="project-content">
                     <div class="project-title">
                         <i class="fa fa-book"></i><h4 class="h4-value">Never Stop Learning</h4>
@@ -259,15 +263,16 @@
                         <p class="p-value">This one has been ingrained since childhood and has become my mantra. Thanks dad!</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- (section) - closing -->
-            <div class="closing"><h3 class="section-title">Let's Connect!</h3>
+            <div class="footer">
                 <div class="modal-social-links">
-                    <a href="#modal-about" uk-toggle class="social-link" target="_blank"><img src="images/julie3.png" style="height:22px; margin:-6px 6px 0 0;"></a>
-                    <a href="mailto:dearjulieho@gmail.com?subject=Dear Julie Ho!"class="social-link" target="_blank"><i class="fa fa-envelope-o"></i></a>
+                    <a href="#modal-about" uk-toggle class="social-link" target="_blank"><img src="images/julie4.png"></a>
                     <a href="http://www.instagram.com/ohjulieho" class="social-link" target="_blank"><i class="fa fa-instagram"></i></a>
                     <a href="http://www.linkedin.com/in/ohjulieho" class="social-link" target="_blank"><i class="fa fa-linkedin"></i></a>
                     <a href="http://www.twitter.com/ohjulieho" class="social-link" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="mailto:dearjulieho@gmail.com?subject=Dear Julie Ho!"class="social-link" target="_blank"><i class="fa fa-envelope"></i></a>
+                    <p class="subtext">© 2017. Julie Ho. All Rights Reserved.</p>
                 </div>
             </div>
         </div>
@@ -573,43 +578,42 @@
         </div>
     </div>
 
-    <script type="text/javascript">
-        var scrollPoint = '#main';
-        var scrollSpeed = 500;
-        var gutter = 30;
-        var scrolling = false;
+     <script type="text/javascript">
+    //     var scrollPoint = '#main';
+    //     var scrollSpeed = 500;
+    //     var gutter = 30;
+    //     var scrolling = false;
 
-        document.addEventListener('scroll', e => {
-            if (scrolling) return false;
+    //     document.addEventListener('scroll', e => {
+    //         if (scrolling) return false;
 
-            var scrollPos = document.body.scrollTop;
-            var offset = $(scrollPoint).offset();
+    //         var scrollPos = document.body.scrollTop;
+    //         var offset = $(scrollPoint).offset();
 
-            var top = offset.top;
-            var bottom = offset.top + $(scrollPoint).outerHeight ();
-            var mid = (bottom - top) / 2;
+    //         var top = offset.top;
+    //         var bottom = offset.top + $(scrollPoint).outerHeight ();
+    //         var mid = (bottom - top) / 2;
 
-            if (scrollPos > (top + gutter) && scrollPos < (bottom - gutter )) {
+    //         if (scrollPos > (top + gutter) && scrollPos < (bottom - gutter )) {
 
-                scrolling = true;
+    //             scrolling = true;
 
-                $(document.body).animate({
-                    scrollTop: (scrollPos < mid) ? bottom : top, 
-                }, scrollSpeed, () => {
-                    scrolling = false;
-                });
-            }
-        });
+    //             $(document.body).animate({
+    //                 scrollTop: (scrollPos < mid) ? bottom : top, 
+    //             }, scrollSpeed, () => {
+    //                 scrolling = false;
+    //             });
+    //         }
+    //     });
 
 
-        function scrollUp(el) {
-            console.log('scrolling...');
-            setTimeout(() => {
-                $(el + ' .uk-modal-dialog')[0].scrollTop = 0;
-            }, 0);
-        }
-
-    </script>
+    //     function scrollUp(el) {
+    //         console.log('scrolling...');
+    //         setTimeout(() => {
+    //             $(el + ' .uk-modal-dialog')[0].scrollTop = 0;
+    //         }, 0);
+    //     }
+    // </script>
     <script src="js/jquery.mobile.custom.min.js"></script> <!-- Resource jQuery -->
     <script src="js/main.js"></script> <!-- Resource jQuery -->
 
