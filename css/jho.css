@@ -716,7 +716,7 @@ svg {
 
 
 
- @media only screen and (min-width: 150px) {
+ /*@media only screen and (min-width: 150px) {
     #main h1 {
 		color: red;
 	}    
@@ -737,7 +737,7 @@ svg {
 @media only screen and (orientation: landscape) {
     body {
         background: black;
-    }
+    }*/
 }
 
 
