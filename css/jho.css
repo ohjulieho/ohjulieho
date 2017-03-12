@@ -89,13 +89,14 @@ body {
 h1 {
 	font-family: 'Playfair display', sans-serif;
 	font-size: 4.7em;
-	line-height: 1em;
+	line-height: 1.1em;
 	color: #454545;
 }
 
 h2 {
 	font-family: 'Playfair display', sans-serif;
 	font-size: 3.1em;
+	line-height: 1.1em;
 	margin-bottom: .5em;
 	color: #5FBFC2;
 }
@@ -103,7 +104,7 @@ h2 {
 h3 {
 	font-family: 'asap', sans-serif;
 	font-size: 1.4em;
-	line-height: 1.3em;
+	line-height: 1.1em;
 	margin-bottom: 2em;
 	color: #454545;
 }
@@ -111,7 +112,7 @@ h3 {
 h4 {
 	font-family: 'asap', sans-serif;
 	font-size: 1.15em;
-	line-height: 1.2em;
+	line-height: 1.1em;
 	margin-bottom: 1em;
 	color: #454545;
 }
@@ -486,6 +487,10 @@ svg {
 	margin-top: 10px;
 }
 
+.uk-modal.uk-open {
+	background: white;
+}
+
 
 /* ----------- image comparison slider ---------- */
 /* --------------------------------------- */
@@ -725,9 +730,9 @@ svg {
 	#main h3 {
 		font-size: 1.2em;
 	}
-	body {
-    	background: red; 
-    }
+	.uk-background-cover {
+		display: none;
+	}
 }
 
 @media only screen and (min-width: 600px) {
@@ -737,17 +742,14 @@ svg {
 	#main h3 {
 		font-size: 1.4em;
 	}
-    body {
-    	background: green; 
-    }
 }
 
 @media only screen and (max-width: 510px) {
 	.project-behance {
-			display: inline-block;
-			margin: 0 10px 25px 10px;
-			width: none;
-			border: 1px solid transparent;
+		display: inline-block;
+		margin: 0 10px 25px 10px;
+		width: none;
+		border: 1px solid transparent;
 	}
 }
 
