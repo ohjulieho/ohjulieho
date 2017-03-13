@@ -13,8 +13,9 @@
 /*      dark grey - #454545  */
 
 
-/* -------------- responsive ------------- */
+/* ---------------- main ----------------- */
 /* --------------------------------------- */
+
 
 html {
 	font: normal 15px / 20px "Helvetica Neue", Helvetica, Arial, sans-serif	;
@@ -179,6 +180,11 @@ span.strong {
 	font-style: italic; 
 }
 
+.social-link {
+	margin-bottom: 0;
+	display: inline-block;
+}
+
 /* ----------- buttons & links ----------- */
 /* --------------------------------------- */
 
@@ -228,12 +234,12 @@ svg {
 
 #main h1 {
 	color: white;
-	text-shadow: 0 0 6px #888;
+	text-shadow: 0 0 4px #888;
 }
 
 #main h3 {
 	color: white;
-	text-shadow: 0 0 3px #888;
+	text-shadow: 0 0 1px #888;
 }
 
 /* -------------- projects --------------- */
@@ -437,8 +443,8 @@ svg {
 
 #rotator {
     text-decoration: none;
-    top: 125px;
-    left: 570px;
+/*    top: 125px;*/
+    left: 30px;
     position: absolute;
     -webkit-animation: move 3s;
     animation: move 3.5s;
@@ -451,9 +457,9 @@ svg {
     -o-transition: all 1s ease-in-out; 
     -ms-transition: all 1s ease-in-out; 
     transition-duration: 1s;
-    margin-top: 180px;
+/*    margin-top: 180px;
     margin-left: 30px;
-    height: 60px;
+    height: 60px;*/
  }
 
 #rotator img:hover { 
@@ -502,6 +508,7 @@ svg {
   margin: 0em auto 10px;
   box-shadow: 0 2px 12px 0 rgba(8,8,8,0.50);
 }
+
 .cd-image-container img {
   display: block;
 }
@@ -526,9 +533,11 @@ svg {
   -moz-transition: -moz-transform 0.3s 5s, opacity 3s 5s;
   transition: transform 0.3s 5s, opacity 0.3s 5s;
 }
+
 .cd-image-label.is-hidden {
   visibility: hidden;
 }
+
 .is-visible .cd-image-label {
   opacity: 1;
   -webkit-transform: translateY(0);
@@ -608,6 +617,7 @@ svg {
     width: 50%;
   }
 }
+
 .cd-handle {
   position: absolute;
   height: 44px;
@@ -722,43 +732,34 @@ svg {
      }
 
 
+/* -------------- responsive ------------- */
+/* --------------------------------------- */
 
- @media only screen and (min-width: 150px) {
+
+@media only screen and (max-width: 600px) {
     #main h1 {
-    	font-size: 4em;
+    	font-size: 3.5em;
 	}    
 	#main h3 {
-		font-size: 1.2em;
+		font-size: 1.3em;
 	}
 	.uk-background-cover {
 		display: none;
 	}
-}
-
-@media only screen and (min-width: 600px) {
-    #main h1 {
-		font-size: 4.7em;
+	.social-link {
+		display: none;
 	}
-	#main h3 {
-		font-size: 1.4em;
+	.social-section ul li {
+	    list-style: none;
+	    display: inline-block;
+	    float: right;
+	    font-size: 1.4em;
+	    margin-right: 8px;
 	}
-}
-
-@media only screen and (max-width: 510px) {
-	.project-behance {
-		display: inline-block;
-		margin: 0 10px 25px 10px;
-		width: none;
-		border: 1px solid transparent;
+	.intro {
+	    padding-top: 30px;
+	    margin: 0 25px 0 25px;
 	}
 }
-
-
-@media only screen and (orientation: landscape) {
-    body {
-        background: black;
-    }
-}
-
 
 
