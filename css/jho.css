@@ -332,15 +332,16 @@ svg {
 	opacity: .8;
 }
 
-#project-seven:hover, #project-seven img, #project-seven .project-card-link {
-	cursor: not-allowed;
-}
-
-.project-section{
+.project-section {
 	padding: 11em 8em 11em 8em;
 	font-size: 1.2em;
 	border-bottom: 3px solid #BFE6E7;
     border-top: 3px solid #BFE6E7;
+}
+
+.project-section.usps, .project-section.hack-congress {
+	border-bottom: none;
+    border-top: none;
 }
 
 .project-tag {
@@ -365,6 +366,10 @@ svg {
 
 .project-title {
 	white-space: nowrap;
+}
+
+.project-usps img {
+	margin-bottom: 10px;
 }
 
 .cd-image-container + .subtext {
