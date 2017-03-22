@@ -765,6 +765,9 @@ svg {
 	    padding-top: 30px;
 	    margin: 0 25px 0 25px;
 	}
+	.project-section, .uk-padding-large {
+		padding: 0;
+	}
 }
 
 
