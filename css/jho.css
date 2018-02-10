@@ -200,9 +200,9 @@ span.strong {
 }
 
 .jh-button-secondary {
-	background: #FFFFFF;
-	color: #A4A4A4;
-	border: 1px solid #A4A4A4;
+	background: none;
+	color: white;
+	border: 1px solid white;
 }
 
 .intro .jh-button {
