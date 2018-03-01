@@ -477,6 +477,11 @@ svg {
 	opacity: .8;
 }
 
+.disabled, .disabled:hover {
+	cursor: default;
+	opacity: 1;
+}
+
 
 /* ----------- UI kit overrides ---------- */
 /* --------------------------------------- */
