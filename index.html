@@ -16,7 +16,7 @@
         <!-- image comparison slider -->
         <script src="js/modernizr.js"></script> <!-- Modernizr -->
 
-        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
         <script type="text/javascript" src="js/scrolloverflow.js"></script>
     </head>
@@ -29,9 +29,9 @@
                 <div class="social-section">
                     <ul>
                         <li><a href="#modal-about" uk-toggle target="_blank"><p class="social-link">about julie ho</p><i class="fa fa-female"></i></a></li>
-                        <li><a href="http://www.linkedin.com/in/ohjulieho" target="_blank"><p class="social-link">linkedin</p><i class="fa fa-linkedin-square"></i></a></li>
-                        <li><a href="http://www.github.com/ohjulieho" target="_blank"><p class="social-link">github</p><i class="fa fa-github"></i></a></li>
-                        <li><a href="http://www.behance.net/ohjulieho" target="_blank"><p class="social-link">behance</p><i class="fa fa-behance"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/ohjulieho" target="_blank"><p class="social-link">linkedin</p><i class="fa fa-linkedin-square"></i></a></li>
+                        <li><a href="https://www.github.com/ohjulieho" target="_blank"><p class="social-link">github</p><i class="fa fa-github"></i></a></li>
+                        <li><a href="https://www.behance.net/ohjulieho" target="_blank"><p class="social-link">behance</p><i class="fa fa-behance"></i></a></li>
                     </ul>
                 </div>
                 <!-- (section) - intro -->
@@ -55,25 +55,44 @@
         <h3 class="section-title">Featured Projects</h3>  
             <!-- project one -->
             <!--             -->
-            <div class="project-card" id="project-one">
-                <div class="project-img" href="#modal-one" uk-toggle>
-                    <img src="images/preview_style_guide.png">
+            <div class="project-card">
+                <div class="project-img disabled">
+                    <img src="images/preview_ps.png">
                 </div>
                 <div class="project-content">
                     <div class="project-title">
-                        <h4>ClickTime Style Guide</h4>
+                        <h4>IBM Watson Patient Synopsis (Private)</h4>
                     </div>
                     <div id="project-blurb">
-                        <p>I championed visual consistency and UI modernization at ClickTime through the creation and development of their first internal style guide and UI components library.</p>
+                        <p> AI trained web application that equips Diagnostic Radiologists with relevant clinical history. I led the user experience and user interface efforts and was a supporting role in the user research.</p>
                     </div>
                     <div>
-                        <p class="project-tag">UI, visual design, front-end dev, style guide</p>
+                        <p class="project-tag">health care, UI/UX, web app</p>
                     </div>
                 </div>
-                <a class="project-card-link" href="#modal-one" uk-toggle>Read more about this project<i class="fa fa-caret-right fa-animate"></i></a>
+                <a class="project-card-link" href="mailto:dearjulieho@gmail.com?subject=Dear Julie Ho!">Ask me about this project<i class="fa fa-caret-right fa-animate"></i></a>
             </div>
             <!-- project two -->
             <!--             -->
+            <div class="project-card" id="project-three">
+                <div class="project-img" href="#modal-three" uk-toggle>
+                    <img src="images/preview_time_entry.png">
+                </div>
+                <div class="project-content">
+                    <div class="project-title">
+                        <h4>Time Entry UI Refresh</h4>
+                    </div>
+                    <div id="project-blurb">
+                        <p>I led the project for the user interface refresh project for ClickTime's core pages and as well as contributed to the front-end implementation.</p>
+                    </div>
+                    <div>
+                        <p class="project-tag">UI/UX, enterprise web app, pair programming</p>
+                    </div>
+                </div>
+                <a class="project-card-link" href="#modal-three" uk-toggle>Read more about this project<i class="fa fa-caret-right fa-animate"></i></a>
+            </div>
+            <!-- project three -->
+            <!--               -->
             <div class="project-card" id="project-two">
                 <div class="project-img" href="#modal-two" uk-toggle>
                     <img src="images/preview_personas_workshop.png">
@@ -91,43 +110,24 @@
                 </div>
                 <a class="project-card-link" href="#modal-two" uk-toggle>Read more about this project<i class="fa fa-caret-right fa-animate"></i></a>
             </div>
-            <!-- project three -->
-            <!--               -->
-            <div class="project-card" id="project-three">
-                <div class="project-img" href="#modal-three" uk-toggle>
-                    <img src="images/preview_time_entry.png">
-                </div>
-                <div class="project-content">
-                    <div class="project-title">
-                        <h4>Time Entry UI Refresh</h4>
-                    </div>
-                    <div id="project-blurb">
-                        <p>I led the project for the user interface refresh project for ClickTime's highest trafficked webpages and as well as contributed to the front-end implementation.</p>
-                    </div>
-                    <div>
-                        <p class="project-tag">UI/UX, enterprise web app, pair programming</p>
-                    </div>
-                </div>
-                <a class="project-card-link" href="#modal-three" uk-toggle>Read more about this project<i class="fa fa-caret-right fa-animate"></i></a>
-            </div>
             <!-- project four -->
             <!--             -->
-            <div class="project-card">
-                <div class="project-img disabled">
-                    <img src="images/preview_ps.png">
+            <div class="project-card" id="project-one">
+                <div class="project-img" href="#modal-one" uk-toggle>
+                    <img src="images/preview_style_guide.png">
                 </div>
                 <div class="project-content">
                     <div class="project-title">
-                        <h4>IBM Watson Patient Synopsis (Private)</h4>
+                        <h4>ClickTime Style Guide</h4>
                     </div>
                     <div id="project-blurb">
-                        <p>This is an AI trained web application that equips Diagnostic Radiologists with relevant clinical history. I currently lead the user experience and user interface efforts and a play supporting role in the user research front.</p>
+                        <p>I championed visual consistency and UI modernization at ClickTime through the creation and development of their first internal style guide and UI components library.</p>
                     </div>
                     <div>
-                        <p class="project-tag">health care, UI/UX, web app</p>
+                        <p class="project-tag">UI, visual design, front-end dev, style guide</p>
                     </div>
                 </div>
-                <a class="project-card-link" href="mailto:dearjulieho@gmail.com?subject=Dear Julie Ho!">Ask me about this project<i class="fa fa-caret-right fa-animate"></i></a>
+                <a class="project-card-link" href="#modal-one" uk-toggle>Read more about this project<i class="fa fa-caret-right fa-animate"></i></a>
             </div>
             <!-- <div class="project-card" id="project-four">
                 <div class="project-img" href="#modal-four" uk-toggle>
@@ -225,7 +225,7 @@
             <!-- project behance --
             <!--                 -->
 <!--        <div class="project-behance">
-                <a href="http://www.behance.net/ohjulieho" target="_blank">
+                <a href="https://www.behance.net/ohjulieho" target="_blank">
                     <div class="project-behance-inset">
                         <img src="images/favicon.png" />
                         <p>See more projects on Behance</p>
@@ -233,7 +233,7 @@
                 </a>
             </div> -->
             <!-- <div class="project-behance">
-                <a class="jh-button jh-button-primary" type="button" href="http://www.behance.net/ohjulieho">View more projects on Behance</a>
+                <a class="jh-button jh-button-primary" type="button" href="https://www.behance.net/ohjulieho">View more projects on Behance</a>
             </div> -->
         </div>
         <!-- (section) - values -->
@@ -303,9 +303,9 @@
             <!-- (section) - closing -->
             <div class="footer">
                 <div class="modal-social-links">
-                    <a href="http://www.linkedin.com/in/ohjulieho" class="social-link" target="_blank"><i class="fa fa-linkedin-square"></i></a>
-                    <a href="http://www.github.com/ohjulieho" class="social-link" target="_blank"><i class="fa fa-github"></i></a>
-                    <a href="http://www.behance.net/ohjulieho" class="social-link" target="_blank"><i class="fa fa-behance"></i></a>
+                    <a href="https://www.linkedin.com/in/ohjulieho" class="social-link" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                    <a href="https://www.github.com/ohjulieho" class="social-link" target="_blank"><i class="fa fa-github"></i></a>
+                    <a href="https://www.behance.net/ohjulieho" class="social-link" target="_blank"><i class="fa fa-behance"></i></a>
                     <p class="subtext">&copy;f 2017 Website designed and coded by Julie Ho.</p>
                 </div>
             </div>
