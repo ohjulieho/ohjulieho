@@ -451,7 +451,7 @@ svg {
 }
 
 .disabled, .disabled:hover {
-  cursor: default;
+  cursor: not-allowed;
   opacity: 1;
 }
 
