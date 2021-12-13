@@ -47,7 +47,7 @@ body {
 
 .intro {
 	padding-top: 60px;
-	margin: 0 50px 0 50px;
+	margin: 0 150px 0 150px;
 }
 
 .social-section ul li {
@@ -92,15 +92,15 @@ h1 {
 
 h2 {
 	font-family: 'Playfair display', serif;
-	font-size: 3.1em;
+	font-size: 2em;
 	line-height: 1.1em;
 	margin-bottom: .5em;
-	color: $primary-color;
+	color: $darker-grey;
 }
 
 h3 {
 	font-family: 'Playfair display', serif;
-	font-size: 1.4em;
+	font-size: 1.2em;
 	line-height: 1.2em;
 	margin-bottom: .6em;
 	color: $darker-grey;
@@ -168,8 +168,7 @@ span.strong {
 
 .subtext {
 	font-size: .87em;
-	color: $dark-grey;
-	font-style: italic; 
+	color: $dark-grey; 
 }
 
 .social-link {
@@ -211,7 +210,6 @@ span.strong {
 
 .social-link {
 	color: white;
-	/*border-bottom: 1px dotted white;*/
 }
 
 
@@ -232,21 +230,21 @@ svg {
 #main h3 {
 	color: white;
 	text-shadow: 0 0 1px $medium-grey;
+	font-family: 'asap', sans-serif;
 }
 
 /* -------------- projects --------------- */
 /* --------------------------------------- */
 
 .recent-work {
-	padding-bottom: 50px;
+	padding-bottom: 25px;
 	text-align: center;
 	background-color: #fafafa;
-/*	min-width: 1060px;*/
 }
 
 .project-behance {
 	display: inline-block;
-	width: 22%;
+	width: 30%;
 	margin: 0 10px 25px 10px;
 	border: 1px solid transparent;
 }
@@ -274,16 +272,17 @@ svg {
 .project-card {
 	display: inline-block;
 	text-align: left;
-	width: 22%;
-	margin: 10px;
+	width: 25%;
+	margin: 20px;
 	min-width: 300px;
-	box-shadow: 0 0 16px $medium-grey;
+	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.05);
 }
 
 .project-card h4 {
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	overflow: auto;
+	text-align: center;
 }
 
 .project-card-link {
@@ -294,6 +293,7 @@ svg {
 	display: inline-block;
 	text-align: center;
 	color: white;
+	display: none;
 }
 
 .project-card-link i {
@@ -309,14 +309,50 @@ svg {
 }
 
 .project-content {
-	padding: 13px;
-	position: relative;
-	height: 190px;
+    padding: 15px 0 15px 0;
+    position: relative;
+    height: 50px;
+    text-align: center;
 }
 
 .project-img {
 	width: 100%;
 	cursor: pointer;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 225px;
+}
+
+#project-blurb {
+	display: none;
+}
+
+#meeting-scheduler {
+	background-image: url(../images/preview_meeting_scheduler.png);
+}
+#patient-synopsis {
+	background-image: url(../images/preview_ps.png);
+}
+#account-admin {
+	background-image: url(../images/preview_account_admin.png);
+}
+#time-entry {
+	background-image: url(../images/preview_time_entry.png);
+}
+#personas {
+	background-image: url(../images/preview_personas_workshop.png);
+}
+#style-guide {
+	background-image: url(../images/preview_style_guide.png);
+}
+
+#bootleggers {
+	background-image: url(../images/preview_bootleggers.png);
+}
+
+#oh-my-words {
+	background-image: url(../images/preview_ohmywords.png);
 }
 
 .project-img:hover {
@@ -339,21 +375,21 @@ svg {
 	font-size: .85em;
 	color: $medium-grey;
 	bottom: 0px;
-	width: 91%;
+	width: 100%;
 	position: absolute;
-	font-style: italic; 
+	text-transform: uppercase;
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	overflow: auto;
 }
 
-.project-tag:before {
-	margin-right: 8px;
-	color: $medium-grey;
-	font-size: 1.1em;
-	content: "\f292";
-	font-family: "fontawesome";
-}
+// .project-tag:before {
+// 	margin-right: 8px;
+// 	color: $medium-grey;
+// 	font-size: 1.1em;
+// 	content: "\f292";
+// 	font-family: "fontawesome";
+// }
 
 .project-title {
 	white-space: nowrap;
@@ -747,10 +783,10 @@ svg {
 
 @media only screen and (max-width: 600px) {
     #main h1 {
-    	font-size: 3.5em;
+    	font-size: 3.2em;
 	}    
 	#main h3 {
-		font-size: 1.3em;
+		font-size: 1.18em;
 	}
 	.uk-background-cover {
 		display: none;
@@ -763,7 +799,8 @@ svg {
 	    display: inline-block;
 	    float: right;
 	    font-size: 1.4em;
-	    margin-right: 8px;
+	    margin-right: 15px;
+		line-height: 25px;
 	}
 	.intro {
 	    padding-top: 30px;
@@ -772,6 +809,13 @@ svg {
 	.project-section, .uk-padding-large {
 		padding: 0;
 	}
+	.project-card {
+		width: 90%;
+	}
+	.top-content {
+		padding-top: 50%;
+	}
+	.recent-work {
+		padding-top: 0;
+	}
 }
-
-
