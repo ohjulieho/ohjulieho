@@ -321,15 +321,19 @@ svg {
 
 .project-img {
 	width: 100%;
+	height: 225px;
 	cursor: pointer;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	height: 225px;
 }
 
 #project-blurb {
 	display: none;
+}
+
+#saved-cars {
+	background-image: url(../images/preview_saved_cars.png);
 }
 
 #meeting-scheduler {
@@ -359,8 +363,9 @@ svg {
 	background-image: url(../images/preview_ohmywords.png);
 }
 
-.project-img:hover {
-	opacity: .8;
+.project-card:hover {
+	transform: scale(1.03);
+	cursor: pointer;
 }
 
 .project-section {
